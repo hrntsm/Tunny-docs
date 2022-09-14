@@ -8,7 +8,6 @@ import * as FeatureIcons from "../components/FeatureIcons.tsx";
 import CopyArea from "../islands/CopyArea.tsx";
 import * as Icons from "../components/Icons.tsx";
 import Projects from "../components/Projects.tsx";
-import projects from "../data/showcase.json" assert { type: "json" };
 
 export const handler: Handlers = {
   GET(req, ctx) {
@@ -50,7 +49,6 @@ export default function MainPage(props: PageProps) {
           <Intro />
           <GettingStarted origin={origin} />
           <Example />
-          <Showcase />
         </div>
         <Footer />
       </div>
@@ -61,12 +59,12 @@ export default function MainPage(props: PageProps) {
 function HelloBar() {
   return (
     <a
-      class="bg-green-400 text-black border(b green-500) p-3 text-center group"
-      href="https://deno.com/blog/fresh-1.1"
+      class="bg-blue-400 text-black border(b blue-500) p-3 text-center group"
+      href="https://github.com/hrntsm/Tunny/releases/tag/v0.5.0"
     >
-      <b>Fresh v1.1</b> has been released with support for <b>automatic JSX</b>,
+      <b>Tunny v0.5</b> has been released with support for <b>constraint</b>,
       {" "}
-      <b>plugins</b>, <b>DevTools support</b>, and more!{"  "}
+      <b>Hypervolume visualize</b>, <b>clustering</b>, and more!{"  "}
       <span class="group-hover:underline">→</span>
     </a>
   );
@@ -75,7 +73,7 @@ function HelloBar() {
 function Hero() {
   return (
     <>
-      <div class="flex justify-end items-center bg-green-300">
+      <div class="flex justify-end items-center bg-blue-300">
         <a
           href="/docs"
           class="border(1 black) inline-flex items-center h-10 px-4 m-4 text-black bg-transparent rounded hover:bg-white"
@@ -83,9 +81,9 @@ function Hero() {
           Documentation
         </a>
       </div>
-      <section class="w-full flex justify-center items-center flex-col bg-green-300">
+      {/* <section class="w-full flex justify-center items-center flex-col bg-blue-300">
         <LemonDrop />
-      </section>
+      </section> */}
     </>
   );
 }
@@ -276,28 +274,6 @@ function Example() {
       <p class="text-gray-600">
         Only the JS required to render that counter is sent to the client.
       </p>
-    </section>
-  );
-}
-
-function Showcase() {
-  return (
-    <section class="max-w-screen-md mx-auto my-16 px(4 sm:6 md:8) space-y-4">
-      <h2 id="showcase" class="text(3xl gray-600) font-bold">
-        <a href="#showcase" class="hover:underline">
-          Showcase
-        </a>
-      </h2>
-      <p class="text-gray-600">
-        Below is a selection of projects that have been built with Fresh.
-      </p>
-      <Projects items={projects.slice(0, 3)} class="gap-8" />
-      <div class="flex gap-2 items-center justify-end text-blue-600">
-        <Icons.ArrowRight />
-        <a href="./showcase" class="hover:underline focus:underline">
-          View more
-        </a>
-      </div>
     </section>
   );
 }
