@@ -20,7 +20,7 @@ export default function DocsTitle() {
         </svg>
         <span class="font-light block pb-[1px]">docs</span>
       </a>
-      <p class="text(sm gray-700)">The next-gen web framework.</p>
+      <p class="text(sm gray-700)">The next-gen Grasshopper optimization tool.</p>
     </>
   );
 }

@@ -8,14 +8,10 @@ export default function NavigationBar(props: { active: string }) {
       name: "Docs",
       href: "/docs",
     },
-    {
-      name: "Showcase",
-      href: "/showcase",
-    },
   ];
 
   return (
-    <nav class="bg-green-200 py-2">
+    <nav class="bg-blue-200 py-2">
       <ul class="flex justify-center gap-8 mx-4">
         {items.map((item) => (
           <li>

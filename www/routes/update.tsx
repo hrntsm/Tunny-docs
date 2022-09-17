@@ -8,7 +8,6 @@ import * as FeatureIcons from "../components/FeatureIcons.tsx";
 import CopyArea from "../islands/CopyArea.tsx";
 import * as Icons from "../components/Icons.tsx";
 import Projects from "../components/Projects.tsx";
-import projects from "../data/showcase.json" assert { type: "json" };
 
 export const handler: Handlers = {
   GET(req) {

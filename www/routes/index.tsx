@@ -47,8 +47,8 @@ export default function MainPage(props: PageProps) {
         <Hero />
         <div class="flex-1">
           <Intro />
-          <GettingStarted origin={origin} />
-          <Example />
+          {/* <GettingStarted origin={origin} /> */}
+          {/* <Example /> */}
         </div>
         <Footer />
       </div>
@@ -175,105 +175,105 @@ function Intro() {
   );
 }
 
-function GettingStarted(props: { origin: string }) {
-  return (
-    <section class="max-w-screen-md mx-auto my-16 px(4 sm:6 md:8) space-y-4">
-      <h2 id="getting-started" class="text(3xl gray-600) font-bold">
-        <a href="#getting-started" class="hover:underline">
-          Getting Started
-        </a>
-      </h2>
-      <div class="text-gray-600 flex gap-1 mb-4 bg-gray-100 p-2 rounded">
-        <div class="text-gray-400">
-          <Icons.Info />
-        </div>
-        <p>
-          <a href="https://deno.land" class="text-blue-600 hover:underline">
-            Deno CLI
-          </a>{" "}
-          version 1.23.0 or higher is required.{" "}
-          <a
-            href="https://deno.land/manual/getting_started/installation"
-            class="text-blue-600 hover:underline"
-          >
-            Install
-          </a>{" "}
-          or{" "}
-          <a
-            href="https://deno.land/manual/getting_started/installation#updating"
-            class="text-blue-600 hover:underline"
-          >
-            update
-          </a>.
-        </p>
-      </div>
-      <p class="text-gray-600">
-        To bootstrap a new project:
-      </p>
+// function GettingStarted(props: { origin: string }) {
+//   return (
+//     <section class="max-w-screen-md mx-auto my-16 px(4 sm:6 md:8) space-y-4">
+//       <h2 id="getting-started" class="text(3xl gray-600) font-bold">
+//         <a href="#getting-started" class="hover:underline">
+//           Getting Started
+//         </a>
+//       </h2>
+//       <div class="text-gray-600 flex gap-1 mb-4 bg-gray-100 p-2 rounded">
+//         <div class="text-gray-400">
+//           <Icons.Info />
+//         </div>
+//         <p>
+//           <a href="https://deno.land" class="text-blue-600 hover:underline">
+//             Deno CLI
+//           </a>{" "}
+//           version 1.23.0 or higher is required.{" "}
+//           <a
+//             href="https://deno.land/manual/getting_started/installation"
+//             class="text-blue-600 hover:underline"
+//           >
+//             Install
+//           </a>{" "}
+//           or{" "}
+//           <a
+//             href="https://deno.land/manual/getting_started/installation#updating"
+//             class="text-blue-600 hover:underline"
+//           >
+//             update
+//           </a>.
+//         </p>
+//       </div>
+//       <p class="text-gray-600">
+//         To bootstrap a new project:
+//       </p>
 
-      <CopyArea>
-        {`deno run -A -r ${props.origin} my-project`}
-      </CopyArea>
+//       <CopyArea>
+//         {`deno run -A -r ${props.origin} my-project`}
+//       </CopyArea>
 
-      <p class="text-gray-600">
-        Enter the newly created project directory and run the following command
-        to start the development server:
-      </p>
+//       <p class="text-gray-600">
+//         Enter the newly created project directory and run the following command
+//         to start the development server:
+//       </p>
 
-      <CopyArea>{`deno task start`}</CopyArea>
+//       <CopyArea>{`deno task start`}</CopyArea>
 
-      <p class="text-gray-600">
-        You can now open{" "}
-        <a
-          href="http://localhost:8000"
-          class="text-blue-600 hover:underline"
-        >
-          http://localhost:8000
-        </a>{" "}
-        in your browser to view the page.
-      </p>
-      <p class="text-gray-600">
-        A more in-depth{" "}
-        <a
-          href="/docs/getting-started"
-          class="text-blue-600 hover:underline"
-        >
-          <i>Getting Started</i>
-        </a>{" "}
-        guide is available in{" "}
-        <a href="/docs" class="text-blue-600 hover:underline">the docs</a>.
-      </p>
-    </section>
-  );
-}
+//       <p class="text-gray-600">
+//         You can now open{" "}
+//         <a
+//           href="http://localhost:8000"
+//           class="text-blue-600 hover:underline"
+//         >
+//           http://localhost:8000
+//         </a>{" "}
+//         in your browser to view the page.
+//       </p>
+//       <p class="text-gray-600">
+//         A more in-depth{" "}
+//         <a
+//           href="/docs/getting-started"
+//           class="text-blue-600 hover:underline"
+//         >
+//           <i>Getting Started</i>
+//         </a>{" "}
+//         guide is available in{" "}
+//         <a href="/docs" class="text-blue-600 hover:underline">the docs</a>.
+//       </p>
+//     </section>
+//   );
+// }
 
-const timeFmt = new Intl.DateTimeFormat("en-US", {
-  timeStyle: "long",
-  hour12: false,
-});
+// const timeFmt = new Intl.DateTimeFormat("en-US", {
+//   timeStyle: "long",
+//   hour12: false,
+// });
 
-function Example() {
-  return (
-    <section class="max-w-screen-md mx-auto my-16 px(4 sm:6 md:8) space-y-4">
-      <h2 id="example" class="text(3xl gray-600) font-bold">
-        <a href="#example" class="hover:underline">
-          Example
-        </a>
-      </h2>
-      <p class="text-gray-600">
-        This text is being server side rendered on the fly. It was rendered at
-        {" "}
-        {timeFmt.format(new Date())}.
-      </p>
-      <p class="text-gray-600">
-        The counter below was rendered on the server with a starting value of 3,
-        and was then hydrated on the client to provide interactivity. Try out
-        the buttons!
-      </p>
-      <Counter start={3} />
-      <p class="text-gray-600">
-        Only the JS required to render that counter is sent to the client.
-      </p>
-    </section>
-  );
-}
+// function Example() {
+//   return (
+//     <section class="max-w-screen-md mx-auto my-16 px(4 sm:6 md:8) space-y-4">
+//       <h2 id="example" class="text(3xl gray-600) font-bold">
+//         <a href="#example" class="hover:underline">
+//           Example
+//         </a>
+//       </h2>
+//       <p class="text-gray-600">
+//         This text is being server side rendered on the fly. It was rendered at
+//         {" "}
+//         {timeFmt.format(new Date())}.
+//       </p>
+//       <p class="text-gray-600">
+//         The counter below was rendered on the server with a starting value of 3,
+//         and was then hydrated on the client to provide interactivity. Try out
+//         the buttons!
+//       </p>
+//       <Counter start={3} />
+//       <p class="text-gray-600">
+//         Only the JS required to render that counter is sent to the client.
+//       </p>
+//     </section>
+//   );
+// }

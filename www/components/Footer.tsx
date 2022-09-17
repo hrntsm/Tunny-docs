@@ -1,15 +1,23 @@
 const LINKS = [
   {
     title: "Source",
-    href: "https://github.com/denoland/fresh",
+    href: "https://github.com/hrntsm/Tunny",
   },
   {
     title: "License",
-    href: "https://github.com/denoland/fresh/blob/main/LICENSE",
+    href: "https://github.com/hrntsm/Tunny/blob/main/LICENSE",
   },
   {
     title: "Code of Conduct",
-    href: "https://github.com/denoland/fresh/blob/main/CODE_OF_CONDUCT.md",
+    href: "https://github.com/hrntsm/Tunny/blob/main/CODE_OF_CONDUCT.md",
+  },
+  {
+    title: "Discussions",
+    href: "https://github.com/hrntsm/Tunny/discussions"
+  },
+  {
+    title: "Changelog",
+    href: "https://github.com/hrntsm/Tunny/blob/main/CHANGELOG.md",
   },
 ];
 
@@ -24,8 +32,16 @@ export default function Footer() {
         ))}
       </div>
       <div class="text(gray-600 center)">
-        <span>© {new Date().getFullYear()} the fresh authors</span>
+        <span>© {new Date().getFullYear()} hrntsm</span>
       </div>
+      <a href="https://fresh.deno.dev/" style="align-items: center; display: flex; justify-content: center;">
+        <img
+          src="/fresh-badge.svg"
+          alt="Fresh logo"
+          width={150}
+          height={40}
+        />
+      </a>
     </footer>
   );
 }

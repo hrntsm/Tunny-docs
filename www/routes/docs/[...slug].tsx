@@ -54,7 +54,7 @@ export default function DocsPage(props: PageProps<Data>) {
   return (
     <>
       <Head>
-        <title>{props.data.page?.title ?? "Not Found"} | fresh docs</title>
+        <title>{props.data.page?.title ?? "Not Found"} | Tunny docs</title>
         <link rel="stylesheet" href={`/gfm.css?build=${__FRSH_BUILD_ID}`} />
         {description && <meta name="description" content={description} />}
       </Head>

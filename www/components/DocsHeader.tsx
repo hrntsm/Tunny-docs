@@ -2,7 +2,7 @@ import DocsTitle from "./DocsTitle.tsx";
 
 export default function DocsHeader() {
   return (
-    <div class="bg-green-300">
+    <div class="bg-blue-300">
       <header class="mx-auto max-w-screen-lg flex gap-3 justify-between">
         <div class="p-4 flex">
           <Logo />
