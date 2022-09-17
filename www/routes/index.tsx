@@ -25,10 +25,10 @@ export const handler: Handlers = {
 
 const TITLE = "Tunny - The next-gen Grasshopper optimization tool.";
 const DESCRIPTION =
-  "Just in time edge rendering, island based interactivity, and no configuration TypeScript support using Deno.";
+  "Tunny includes previously unseen features such as constrained multi-objective optimization, Quasi-MonteCarlo sampling and dashboards for results analysis etc.";
 
 export default function MainPage(props: PageProps) {
-  const ogImageUrl = new URL(asset("/home-og.png")).href;
+  const ogImageUrl = new URL(asset("/home-og.png"), props.url).href;
   const origin = `${props.url.protocol}//${props.url.host}`;
 
   return (
