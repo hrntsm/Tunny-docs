@@ -2,6 +2,9 @@
   "introduction": {
     "title": "Introduction"
   },
+  "installation": {
+    "title": "Installation"
+  },
   "components": {
     "title": "Components",
     "pages": [

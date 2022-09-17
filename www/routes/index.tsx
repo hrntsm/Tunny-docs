@@ -47,7 +47,7 @@ export default function MainPage(props: PageProps) {
         <Hero />
         <div class="flex-1">
           <Intro />
-          {/* <GettingStarted origin={origin} /> */}
+          <GettingStarted origin={origin} />
           {/* <Example /> */}
         </div>
         <Footer />
@@ -93,49 +93,35 @@ function Features() {
   const desc = "flex-1 md:text-center";
 
   return (
-    <div class="grid md:grid-cols-3 gap-6 md:gap-14">
+    <div class="grid md:grid-cols-2 gap-6 md:gap-14">
       <div class={item}>
         <FeatureIcons.Globe />
         <div class={desc}>
-          <b>Just-in-time rendering</b> on the edge.
+          Multi-objective optimization <b>with constraint</b>.
         </div>
       </div>
 
       <div class={item}>
         <FeatureIcons.Island />
         <div class={desc}>
-          <b>Island based client hydration</b> for maximum interactivity.
-        </div>
-      </div>
-
-      <div class={item}>
-        <FeatureIcons.LightWeight />
-        <div class={desc}>
-          <b>Zero runtime overhead</b>: no JS is shipped to the client by
-          default.
+          The only one that supports <b>Bayesian optimization</b>.
         </div>
       </div>
 
       <div class={item}>
         <FeatureIcons.NoBuild />
         <div class={desc}>
-          <b>No build step</b>.
+          <b>Powerful</b> result analysis function.
         </div>
       </div>
 
       <div class={item}>
         <FeatureIcons.Gabage />
         <div class={desc}>
-          <b>No configuration</b> necessary.
+          Do not throw away previous results. <b>Can Restart optimization</b>
         </div>
       </div>
 
-      <div class={item}>
-        <FeatureIcons.TypeScript />
-        <div class={desc}>
-          <b>TypeScript support</b> out of the box.
-        </div>
-      </div>
     </div>
   );
 }
@@ -168,9 +154,58 @@ function Intro() {
       <Features />
 
       <p class="text-gray-600">
-        Fresh embraces the tried and true design of server side rendering and
-        progressive enhancement on the client side.
+        Tunny includes previously unseen features such as constrained multi-objective optimization,
+        Quasi-MonteCarlo sampling and dashboards for results analysis etc.
       </p>
+    </section>
+  );
+}
+
+function GettingStarted() {
+  return (
+    <section class="max-w-screen-md mx-auto my-16 px(4 sm:6 md:8) space-y-4">
+      <h2 id="getting-started" class="text(3xl gray-600) font-bold">
+        <a href="#getting-started" class="hover:underline">
+          Getting Started
+        </a>
+      </h2>
+      <p class="text-gray-600">
+        First, Tunny runs on Windows only.
+      </p>
+
+      <ol class="text-gray-600" type="1">
+        <li>1. Download Tunny from{" "}
+          <a
+            href="https://www.food4rhino.com/en/app/tunny"
+            class="text-blue-600 hover:underline"
+          >
+            food4rhino
+          </a>
+          {" "} or {" "}
+          <a
+            href="https://github.com/hrntsm/tunny/releases"
+            class="text-blue-600 hover:underline"
+          >
+            release page.
+          </a>
+        </li>
+        <li>
+          2. Right-click the file > Properties > make sure there is no "blocked" text
+        </li>
+        <li>
+          3. In Grasshopper, choose File > Special Folders > Components folder. Move Tunny folder you downloaded there.
+        </li>
+        <li>
+          4. Restart Rhino and Grasshopper
+        </li>
+        <li>
+          5. In Grasshopper, Place the Tunny component and double-click the icon to start downloading the necessary libraries.
+        </li>
+        <li>
+          6. Enjoy!
+        </li>
+      </ol>
+
     </section>
   );
 }
