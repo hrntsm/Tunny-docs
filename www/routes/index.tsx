@@ -150,17 +150,17 @@ function Intro() {
           </h2>
 
           <p class="mt-4 text-gray-600">
-            Built for speed, reliability, and simplicity.
+            Reveals design space and solution space at high speed
           </p>
         </div>
 
         <picture class="block mt-4 md:mt-0">
           <img
-            src="/illustration/lemon-squash.svg"
+            src="/TunnyIcon.svg"
             class="w-80 mx-auto"
-            width={800}
-            height={678}
-            alt="deno is drinking fresh lemon squash"
+            width={100}
+            height={100}
+            alt="Tunny Icon"
           />
         </picture>
       </div>

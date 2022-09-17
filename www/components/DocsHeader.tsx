@@ -38,8 +38,8 @@ function Logo() {
   return (
     <a href="/" class="flex mr-3 items-center">
       <img
-        src="/logo.svg"
-        alt="Fresh logo"
+        src="/TunnyIcon.svg"
+        alt="Tunny Icon"
         width={40}
         height={40}
       />
