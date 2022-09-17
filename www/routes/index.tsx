@@ -28,7 +28,7 @@ const DESCRIPTION =
   "Just in time edge rendering, island based interactivity, and no configuration TypeScript support using Deno.";
 
 export default function MainPage(props: PageProps) {
-  const ogImageUrl = new URL(asset("/home-og.png"), props.url).href;
+  const ogImageUrl = new URL(asset("/home-og.png")).href;
   const origin = `${props.url.protocol}//${props.url.host}`;
 
   return (
@@ -47,7 +47,7 @@ export default function MainPage(props: PageProps) {
         <Hero />
         <div class="flex-1">
           <Intro />
-          <GettingStarted origin={origin} />
+          <GettingStarted />
           {/* <Example /> */}
         </div>
         <Footer />
@@ -190,10 +190,10 @@ function GettingStarted() {
           </a>
         </li>
         <li>
-          2. Right-click the file > Properties > make sure there is no "blocked" text
+          2. Right-click the file {">"} Properties {">"} make sure there is no "blocked" text
         </li>
         <li>
-          3. In Grasshopper, choose File > Special Folders > Components folder. Move Tunny folder you downloaded there.
+          3. In Grasshopper, choose File {">"} Special Folders {">"} Components folder. Move Tunny folder you downloaded there.
         </li>
         <li>
           4. Restart Rhino and Grasshopper

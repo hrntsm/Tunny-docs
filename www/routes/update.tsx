@@ -27,7 +27,7 @@ const DESCRIPTION =
   "Just in time edge rendering, island based interactivity, and no configuration TypeScript support using Deno.";
 
 export default function MainPage(props: PageProps) {
-  const ogImageUrl = new URL(asset("/home-og.png"), props.url).href;
+  const ogImageUrl = new URL(asset("/home-og.png")).href;
   const origin = `${props.url.protocol}//${props.url.host}`;
 
   return (
