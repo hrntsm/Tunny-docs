@@ -37,7 +37,7 @@ export default function Footer() {
       <a href="https://fresh.deno.dev/" style="align-items: center; display: flex; justify-content: center;">
         <img
           src="/fresh-badge.svg"
-          alt="Fresh logo"
+          alt="Made with Fresh"
           width={150}
           height={40}
         />
