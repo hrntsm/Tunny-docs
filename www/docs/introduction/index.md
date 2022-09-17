@@ -1,44 +1,31 @@
 ---
 description: |
-  Fresh is a full stack modern web framework for JavaScript and TypeScript
-  developers, designed to make it trivial to create high-quality, performant,
-  and personalized web applications.
+  :fish:**Tunny**:fish: is Grasshopper's optimization component using Optuna, an open source hyperparameter auto-optimization framework.
 ---
 
-Fresh is a full stack modern web framework for JavaScript and TypeScript
-developers, designed to make it trivial to create high-quality, performant, and
-personalized web applications. You can use it to create your home page, a blog,
-a large web application like GitHub or Twitter, or anything else you can think
-of.
+:fish:**Tunny**:fish: is Grasshopper's optimization component using Optuna, an open source hyperparameter auto-optimization framework.
 
-At its core, Fresh is a combination of a routing framework and templating engine
-that renders pages on demand, on the server. In addition to this just-in-time
-(JIT) rendering on the server, Fresh also provides an interface for seamlessly
-rendering some components on the client for maximum interactivity. The framework
-uses [Preact][preact] and JSX for rendering and templating on both the server
-and the client.
+This component support below optimization algorithms. 
 
-Fresh also does not have a build step. The code you write is also directly the
-code that is run on the server, and the code that is executed on the client. Any
-necessary transpilation of TypeScript or JSX to plain JavaScript is done on the
-fly, just when it is needed. This allows for insanely fast iteration loops and
-very very fast deployments.
+1. Bayesian optimization(TPE)
+1. Bayesian optimization(GP)
+1. Genetic algorithm(NSGA-II)
+1. Evolution strategy(CMA-ES)
+1. Quasi-MoteCarlo
+1. Random
+1. Grid
 
-Fresh projects can be deployed manually to any platform with `deno`, but it is
-intended to be deployed to an edge runtime like [Deno Deploy][deno-deploy] for
-the best experience.
+TPE, GP and NSGA-II also **support multi-objective optimization with constrains**.
+A very significant feature of this component is its support for **Bayesian optimization**.
 
-Some stand out features:
+It is inspired by components such as Galapagos, opossum, and wallacei, and can be used in a similar way to them.
+For more information on how to use it, click here to see document.
 
-- No build step
-- Zero config necessary
-- JIT rendering on the edge
-- Tiny & fast (no client JS is required by the framework)
-- Optional client side hydration of individual components
-- Highly resilient because of progressive enhancement and use of native browser
-  features
-- TypeScript out of the box
-- File-system routing à la Next.js
+The following is taken from the Optuna official website
 
-[preact]: https://preactjs.com
-[deno-deploy]: https://deno.com/deploy
+> Optuna™, an open-source automatic hyperparameter optimization framework, automates the trial-and-error process of optimizing the hyperparameters.
+> It automatically finds optimal hyperparameter values based on an optimization target.
+> Optuna is framework agnostic and can be used with most Python frameworks, including Chainer, Scikit-learn, Pytorch, etc.
+>Optuna is used in PFN projects with good results. One example is the second place award in the Google AI Open Images 2018 – Object Detection Track competition.
+
+Optuna official site : https://optuna.org/

@@ -7,7 +7,6 @@ import VERSIONS from "../../versions.json" assert { type: "json" };
 import * as FeatureIcons from "../components/FeatureIcons.tsx";
 import CopyArea from "../islands/CopyArea.tsx";
 import * as Icons from "../components/Icons.tsx";
-import Projects from "../components/Projects.tsx";
 
 export const handler: Handlers = {
   GET(req) {
@@ -48,7 +47,6 @@ export default function MainPage(props: PageProps) {
           <Intro />
           <GettingStarted origin={origin} />
           <Example />
-          <Showcase />
         </div>
         <Footer />
       </div>
@@ -260,28 +258,6 @@ function Example() {
       <p class="text-gray-600">
         Only the JS required to render that counter is sent to the client.
       </p>
-    </section>
-  );
-}
-
-function Showcase() {
-  return (
-    <section class="max-w-screen-md mx-auto my-16 px(4 sm:6 md:8) space-y-4">
-      <h2 id="showcase" class="text(3xl gray-600) font-bold">
-        <a href="#showcase" class="hover:underline">
-          Showcase
-        </a>
-      </h2>
-      <p class="text-gray-600">
-        Below is a selection of projects that have been built with Fresh.
-      </p>
-      <Projects items={projects.slice(0, 3)} class="gap-8" />
-      <div class="flex gap-2 items-center justify-end text-blue-600">
-        <Icons.ArrowRight />
-        <a href="./showcase" class="hover:underline focus:underline">
-          View more
-        </a>
-      </div>
     </section>
   );
 }
