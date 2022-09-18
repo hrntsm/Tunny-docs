@@ -209,7 +209,7 @@ function GettingStarted() {
       <p class="text-gray-600">
         Please see{" "}
         <a
-          href="https://www.food4rhino.com/en/app/tunny"
+          href="/docs"
           class="text-blue-600 hover:underline"
         >
           the documentation page
