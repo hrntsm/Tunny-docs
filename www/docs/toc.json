@@ -23,6 +23,15 @@
       ["file-tab", "File Tab"]
     ]
   },
+  "run-by-python": {
+    "title": "Run by Python",
+    "pages": [
+      ["about-optuna", "About Optuna"],
+      ["optimize", "Optimize"],
+      ["use-tunny-result", "Use Tunny Result"],
+      ["add-plot", "Add Plot"]
+    ]
+  },
   "donation": {
     "title": "Donation"
   },
