@@ -14,7 +14,7 @@ The python runtime environment is created in the folder "python-3.10.0-embed-amd
 Therefore, execute the following command in that installed Python folder.
 
 ```bash
- ./python.exe
+$ ./python.exe
 ```
 
 Then the interactive mode of the Python environment used by Tunny will be started as follows.
@@ -28,7 +28,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 The following command confirms that the libraries required for optimization have already been installed by Tunny.
 
 ```bash
-./python.exe -m pip list
+$ ./python.exe -m pip list
 ```
 
 The following results will be output.

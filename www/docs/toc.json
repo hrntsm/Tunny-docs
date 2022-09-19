@@ -5,6 +5,9 @@
   "installation": {
     "title": "Installation"
   },
+  "getting-start": {
+    "title": "Getting Start"
+  },
   "components": {
     "title": "Components",
     "pages": [
