@@ -19,7 +19,7 @@ $ ./python.exe
 
 Then the interactive mode of the Python environment used by Tunny will be started as follows.
 
-```bash
+```
 Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information. 
 >>>
@@ -33,7 +33,7 @@ $ ./python.exe -m pip list
 
 The following results will be output.
 
-```bash
+```
 Package           Version
 ----------------- -------
 alembic           1.8.0

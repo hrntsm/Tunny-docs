@@ -10,7 +10,7 @@ Unfortunately, this operation cannot be done on Grasshopper, but it can be done 
 This operation can be achieved with a few additions to the code that displays the optimization results using the code introduced in the previous section.  
 First, read the optimization results and create a `fig`.
 
-```python
+```cs
 # set storage path
 storage = "sqlite:///PATH_TO/Tunny_Opt_Result.db"
 
@@ -27,7 +27,7 @@ which adds values to the scatter plot.
 After add values, the plot is displayed and saved below.
 The following example adds a new point at coordinates [1,1,1] with the name "added point" displayed on mouse hover.
 
-```python
+```cs
 # add data point
 fig.add_scatter3d(x=[1], y=[1], z=[1], name="added point")
 
