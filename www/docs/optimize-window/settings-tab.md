@@ -52,9 +52,9 @@ TPE fits one Gaussian Mixture Model (GMM) `l(x)`to the set of parameter values 
 
 ### API Reference
 
-[optuna.integration.BoTorchSampler](https://optuna.readthedocs.io/en/stable/reference/generated/optuna.integration.BoTorchSampler.html)
+- [optuna.integration.BoTorchSampler](https://optuna.readthedocs.io/en/stable/reference/generated/optuna.integration.BoTorchSampler.html)
 
-### About constraits
+### About constrains
 
 - A value strictly larger than 0 means that a constraints is violated. A value equal to or smaller than 0 is considered feasible.
 - more detail
@@ -64,7 +64,7 @@ TPE fits one Gaussian Mixture Model (GMM) `l(x)`to the set of parameter values 
 
 ### API Reference
 
-[optuna.samplers.CmaEsSampler](https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.CmaEsSampler.html)
+- [optuna.samplers.CmaEsSampler](https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.CmaEsSampler.html)
 
 ### Image of behavior
 
@@ -79,7 +79,7 @@ Multi-objective sampler using the NSGA-II algorithm.
 
 ### API Reference
 
-[optuna.samplers.NSGAIISampler](https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.NSGAIISampler.html)
+- [optuna.samplers.NSGAIISampler](https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.NSGAIISampler.html)
 
 ### Referenced Paper
 
@@ -96,14 +96,24 @@ Multi-objective sampler using the NSGA-II algorithm.
 - A value strictly larger than 0 means that a constraints is violated. A value equal to or smaller than 0 is considered feasible.
 - [https://github.com/optuna/optuna/pull/3506](https://github.com/optuna/optuna/pull/3506)
 
-## QMC (Quasi-Munte Carlo)
+## QMC (Quasi-Monte Carlo)
 
 A Quasi Monte Carlo Sampler that generates low-discrepancy sequences.
 
 ### API Reference
 
-[optuna.samplers.QMCSampler](https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.QMCSampler.html)
+- [optuna.samplers.QMCSampler](https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.QMCSampler.html)
+
+This process uses scipy inside optuna. If you want to know the detailed process, please refer to the following scipy documentation.
+
+- [scipy.stats.qmc](https://docs.scipy.org/doc/scipy/reference/stats.qmc.html)
 
 ### Related to PullRequest
 
 - [https://github.com/optuna/optuna/pull/2423](https://github.com/optuna/optuna/pull/2423)
+
+### When should QMC be selected instead of random?
+
+Random sampling, as the name implies, samples randomly. This means that the spacing between the sampled points is not guaranteed to be far apart, and it is possible to sample a point right next to a point that has already been sampled.  
+On the other hand, quasi-Monte Carlo allows for random sampling with some spacing.
+For example, if you want to check the entire solution space with a small sample, you may be able to do so faster than with random.
