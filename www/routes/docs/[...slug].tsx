@@ -28,7 +28,7 @@ export const handler: Handlers<Data> = {
     if (slug === "") {
       return new Response("", {
         status: 307,
-        headers: { location: "/docs/introduction" },
+        headers: { location: "/docs/getting-start" },
       });
     }
     const entry = TABLE_OF_CONTENTS[slug];
