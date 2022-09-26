@@ -1,12 +1,9 @@
 {
-  "introduction": {
-    "title": "Introduction"
-  },
-  "installation": {
-    "title": "Installation"
-  },
   "getting-start": {
-    "title": "Getting Start"
+    "title": "Getting Start",
+    "pages": [
+      ["installation", "Installation"]
+    ]
   },
   "components": {
     "title": "Components",
@@ -34,6 +31,9 @@
       ["use-tunny-result", "Use Tunny Result"],
       ["add-plot", "Add Plot"]
     ]
+  },
+  "knowledge": {
+    "title": "Knowledge"
   },
   "donation": {
     "title": "Donation"
