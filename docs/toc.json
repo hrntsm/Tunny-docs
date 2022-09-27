@@ -1,0 +1,51 @@
+{
+  "getting-start": {
+    "title": "Getting Start",
+    "pages": [
+      ["installation", "Installation"]
+    ]
+  },
+  "components": {
+    "title": "Components",
+    "pages": [
+      ["input", "Tunny Input"],
+      ["output", "Tunny Output"]
+    ]
+  },
+  "optimize-window": {
+    "title": "Optimize Window",
+    "pages": [
+      ["optimize-tab", "Optimize Tab"],
+      ["how-to-select-sampler", "How to Select Sampler"],
+      ["visualize-tab", "Visualize Tab"],
+      ["output-tab", "Output Tab"],
+      ["settings-tab", "Settings Tab"],
+      ["file-tab", "File Tab"]
+    ]
+  },
+  "technical-info": {
+    "title": "Technical info",
+    "pages": [
+      ["tree-structured-parzen-estimator", "TPE"],
+      ["gaussian-process", "GP"],
+      ["non-dominated-sorting-genetic-algorithm-ii", "NSGA-II"],
+      ["covariance-matrix-adaptation-evolution-strategy", "CMA-ES"],
+      ["random-and-quasi-monte-carlo", "Random & QMC"]
+    ]
+  },
+  "run-by-python": {
+    "title": "Run by Python",
+    "pages": [
+      ["about-optuna", "About Optuna"],
+      ["optimize", "Optimize"],
+      ["use-tunny-result", "Use Tunny Result"],
+      ["add-plots-to-the-figure", "Add Plots to the Figure"]
+    ]
+  },
+  "donation": {
+    "title": "Donation"
+  },
+  "license": {
+    "title": "License"
+  }
+}
