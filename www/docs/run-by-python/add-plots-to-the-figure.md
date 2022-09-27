@@ -9,8 +9,11 @@ Unfortunately, this operation cannot be done on Grasshopper, but it can be done 
 
 This operation can be achieved with a few additions to the code that displays the optimization results using the code introduced in the previous section.  
 First, read the optimization results and create a `fig`.
+This fig is a graph object in a library called [plotly](https://plotly.com/python/).
 
 ```cs
+import optuna
+
 # set storage path
 storage = "sqlite:///PATH_TO/Tunny_Opt_Result.db"
 

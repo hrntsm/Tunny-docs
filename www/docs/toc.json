@@ -39,7 +39,7 @@
       ["about-optuna", "About Optuna"],
       ["optimize", "Optimize"],
       ["use-tunny-result", "Use Tunny Result"],
-      ["add-plot", "Add Plot"]
+      ["add-plots-to-the-figure", "Add Plots to the Figure"]
     ]
   },
   "donation": {
