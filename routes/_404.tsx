@@ -6,7 +6,7 @@ export function ServerCodePage(
   return (
     <>
       <section>
-        <div class="w-full flex justify-center items-center flex-col bg-green-300">
+        <div class="w-full flex justify-center items-center flex-col bg-blue-300">
           <LemonDrop />
         </div>
         <div class="text-center">
