@@ -3,7 +3,7 @@ import { Handlers, PageProps } from "$fresh/server.ts";
 import Counter from "../islands/Counter.tsx";
 import LemonDrop from "../islands/LemonDrop.tsx";
 import Footer from "../components/Footer.tsx";
-import VERSIONS from "../../versions.json" assert { type: "json" };
+import VERSIONS from "../versions.json" assert { type: "json" };
 import * as FeatureIcons from "../components/FeatureIcons.tsx";
 import CopyArea from "../islands/CopyArea.tsx";
 import * as Icons from "../components/Icons.tsx";
