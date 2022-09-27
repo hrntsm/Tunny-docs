@@ -47,7 +47,7 @@ export default function CopyArea(props: { children: ComponentChildren }) {
           aria-label="Copy to Clipboard"
           disabled={!IS_BROWSER}
           class={`rounded p-1.5 border border-gray-300 hover:bg-gray-700 ${
-            copied ? "text-green-500" : ""
+            copied ? "text-blue-500" : ""
           } relative`}
           onClick={handleClick}
         >

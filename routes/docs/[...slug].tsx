@@ -96,7 +96,7 @@ function MobileSidebar(props: { path: string }) {
           for="docs_sidebar"
         />
         <div class="relative flex-1 flex flex-col w-[16rem] h-full bg-white border(r-2 gray-100)">
-          <div class="p-4 border(b-2 gray-100) bg-green-300">
+          <div class="p-4 border(b-2 gray-100) bg-blue-300">
             <DocsTitle />
           </div>
           <nav class="pt-2 pb-16 px-4 overflow-x-auto">

@@ -12,7 +12,7 @@ export default function DocsHeader() {
         </div>
         <label
           for="docs_sidebar"
-          class="px-4 py-4 md:hidden border(l-2 green-200) flex items-center hover:bg-green-100"
+          class="px-4 py-4 md:hidden border(l-2 blue-200) flex items-center hover:bg-blue-100"
         >
           <svg
             class="h-6 w-6"
