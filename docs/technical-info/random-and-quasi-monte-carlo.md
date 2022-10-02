@@ -45,3 +45,10 @@ As explained above, QMC has low discrepancy, so there is always a fixed interval
 
 Tunny allows you to change the range of variables within the same study. Thus, for example, you can start with QMC to check the entire study, and then change the range of the Number slider to sample only the areas you want to look at in more detail with Random.
 Using this functionality, it is possible to not only perform simple optimization, but also to gain a more detailed understanding of the solution space.
+
+# Reference
+
+- [scipy.stats.qmc](https://scipy.github.io/devdocs/reference/stats.qmc.html)
+  - Tunny uses Scipy, a Python library, to calculate QMC.
+- [Low-discrepancy sequence](https://en.wikipedia.org/wiki/Low-discrepancy_sequence)
+- [Bergstra, James, and Yoshua Bengio. Random search for hyper-parameter optimization. Journal of machine learning research 13.2, 2012.](https://jmlr.org/papers/v13/bergstra12a.html)
