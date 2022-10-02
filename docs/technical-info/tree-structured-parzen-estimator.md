@@ -1,6 +1,6 @@
 ---
 description: |
-  This section describes how to support Tunny development.
+  This section provides an overview of the TPE (Tree-structured Parzen Estimator).
 ---
 
 # Tree-structured Parzen Estimator
