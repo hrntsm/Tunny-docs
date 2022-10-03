@@ -1,11 +1,11 @@
 ---
 description: |
-  This section describes how to support Tunny development.
+  This section provides an overview of the TPE (Tree-structured Parzen Estimator).
 ---
 
 # Tree-structured Parzen Estimator
 
-Both GP and TPE are optimization methods classified as Bayesian optimization, and these will be introduced.
+Both GP and TPE are optimization methods categorized as Bayesian optimization, and these will be introduced.
 The differences are outlined below.
 
 - GP uses `p(y|x)` to calculate EI(Expected Improvement).
