@@ -1,6 +1,6 @@
 ---
 description: |
-  :fish:**Tunny**:fish: is Grasshopper's optimization component using Optuna, an open source hyperparameter auto-optimization framework.
+  Tunny is Grasshopper's optimization component using Optuna, an open source hyperparameter auto-optimization framework.
 ---
 
 :fish:**Tunny**:fish: is Grasshopper's optimization component using Optuna, an open source hyperparameter auto-optimization framework.

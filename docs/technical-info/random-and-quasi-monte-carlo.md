@@ -15,13 +15,16 @@ Before reading the detailed explanation, it is best to first look at the results
 Since Tunny's Quasi-MonteCarlo sampler can use two algorithms, Halton and Sobol, these are the results of what values were sampled when `x` and `y` were sampled in the range of `-10 to 10` using those two and a random sampler.
 In the following, 256 individuals were sampled, and the darker the color, the later they were sampled.
 
-- QMC(Halton)
+#### QMC(Halton)
+
   <img width="300" src="/docs/technical-info/halton.png">
 
-- QMC(Sobol')
+#### QMC(Sobol')
+
   <img width="300" src="/docs/technical-info/sobol.png">
 
-- Random
+#### Random
+
   <img width="300" src="/docs/technical-info/random.png">
 
 I hope everyone who has seen these figures already understands the difference between Random and QMC.
@@ -30,8 +33,6 @@ Sampling with QMC is random, but the points are not crowded together in one plac
 A number sequence with this characteristic is called a `low-discrepancy sequence`.
 
 On the other hand, the Random Sampler is required to be as "random" as possible, as the word implies, so it may sample a point very close to a point that has already been observed.
-
-## When to use it
 
 ## Which to use?
 
@@ -45,6 +46,48 @@ As explained above, QMC has low discrepancy, so there is always a fixed interval
 
 Tunny allows you to change the range of variables within the same study. Thus, for example, you can start with QMC to check the entire study, and then change the range of the Number slider to sample only the areas you want to look at in more detail with Random.
 Using this functionality, it is possible to not only perform simple optimization, but also to gain a more detailed understanding of the solution space.
+
+## When to use it
+
+As noted in the TPE and GP sections, these SMBOs (Sequential Model-Based Global Optimization) use Random in advance because the shape of the object to be optimized must generally be known prior to optimization.  
+SMBO is not the only one who should know this. When performing optimization, you yourself should know in advance whether the solution you seek is likely to exist within the range of the number slider you have set.  
+Random and QMC are used to achieve this.
+
+As an example of how the solution space can be determined by the method, the results of 512 samplings for Random, QMC, and TPE, are shown below.
+
+#### Random
+
+<img width="400" src="/docs/technical-info/ackley_random.png">
+
+#### QMC(Sobol')
+
+<img width="400" src="/docs/technical-info/ackley_sobol.png">
+
+#### TPE
+
+<img width="400" src="/docs/technical-info/ackley_tpe.png">
+
+Did you find out what shape the objective function is?  
+This function is called the Ackley function and is expressed by the following equation.
+
+```py
+# Ackley function
+Z = -20*exp(-0.2*sqrt(0.5*(X^2 + Y^2))) - exp(0.5*(cos(2*pi*X) + cos(2*pi*Y))) + exp(1) + 20
+```
+
+<img width="300" src="/docs/technical-info/ackley_true.png">
+
+It is true that TPE solves this problem properly by taking a value close to 0, the global optimal solution, at (0,0), but the shape of the objective function is not as clear as with other methods.  
+It can be seen that the results with QMC are very close to the actual shapes.
+
+As the above example shows, optimization only knows the best solution.  
+Random and QMC may not know the true optimal solution. However, by carefully analyzing the results, there is a possibility to obtain more information than the optimization.
+
+For example, let's use the above example.
+Suppose you need a range of z-values less than or equal to 2.
+The optimization only shows that it will be approximately 0 near (0, 0).
+However, by using Random and QMC, you know that the range of -0.5 to 0.5 is below 2.
+In other words, you can know that the range of -0.5 to 0.5 is usable for this design, and you don't have to search the range around (0,0) again by yourself.
 
 # Reference
 
