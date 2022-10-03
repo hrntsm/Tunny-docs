@@ -11,14 +11,14 @@ This component support below optimization algorithms.
 1. Bayesian optimization(GP)
 1. Genetic algorithm(NSGA-II)
 1. Evolution strategy(CMA-ES)
-1. Quasi-MoteCarlo
+1. Quasi-Monte Carlo
 1. Random
 1. Grid
 
 TPE, GP and NSGA-II also **support multi-objective optimization with constrains**.
 A very significant feature of this component is its support for **Bayesian optimization**.
 
-It is inspired by components such as Galapagos, opossum, and wallacei, and can be used in a similar way to them.
+It is inspired by components such as Galapagos, [opossum](https://www.food4rhino.com/en/app/opossum-optimization-solver-surrogate-models), and [wallacei](https://www.food4rhino.com/en/app/wallacei), and can be used in a similar way to them.
 For more information on how to use it, click here to see document.
 
 The following is taken from the Optuna official website
