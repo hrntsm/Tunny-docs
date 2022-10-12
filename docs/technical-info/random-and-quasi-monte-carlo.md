@@ -37,8 +37,8 @@ On the other hand, the Random Sampler is required to be as "random" as possible,
 ## Which to use?
 
 If you want to know the entire solution space cleanly, I recommend using `QMC`.  
-The distinction between the use of Halton and Sobol' is that sobol has the feature of being able to sample with more variables, while still keeping a constant interval.
-However, Sobol' is an algorithm that results in a low-discrepancy sequence when sampling to powers of two, so Halton may be used if sampling to powers of two is not possible.
+The distinction between the use of Halton and Sobol' is that `sobol` has the feature of being able to sample with more variables, while still keeping a constant interval.
+However, Sobol' is an algorithm that results in a low-discrepancy sequence when sampling to powers of two, so `Halton` may be used if sampling to powers of two is not possible.
 
 Next, let's look at when to use `Random`.
 Random is useful, for example, when the objective function may zigzag within a short range.  
