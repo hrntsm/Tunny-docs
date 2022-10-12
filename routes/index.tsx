@@ -26,6 +26,7 @@ export default function MainPage(props: PageProps) {
         <meta property="og:type" content="website" />
         <meta property="og:url" content={props.url.href} />
         <meta property="og:image" content="https://raw.githubusercontent.com/hrntsm/Tunny-docs/main/static/home-og.png" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <div class="flex flex-col min-h-screen">
         <HelloBar />
