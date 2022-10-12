@@ -9,27 +9,12 @@ import CopyArea from "../islands/CopyArea.tsx";
 import * as Icons from "../components/Icons.tsx";
 import Projects from "../components/Projects.tsx";
 
-export const handler: Handlers = {
-  GET(req, ctx) {
-    const accept = req.headers.get("accept");
-    if (accept && !accept.includes("text/html")) {
-      const path = `https://deno.land/x/fresh@${VERSIONS[0]}/init.ts`;
-      return new Response(`Redirecting to ${path}`, {
-        headers: { "Location": path },
-        status: 307,
-      });
-    }
-    return ctx.render();
-  },
-};
-
-const TITLE = "Tunny - The next-gen Grasshopper optimization tool.";
+const TITLE = "Tunny documentation";
 const DESCRIPTION =
-  "Tunny includes previously unseen features such as constrained multi-objective optimization, Quasi-MonteCarlo sampling and dashboards for results analysis etc.";
+  "Tunny is the next-gen Grasshopper optimization tool. it includes previously unseen features such as constrained multi-objective optimization, Quasi-MonteCarlo sampling and dashboards for results analysis etc.";
 
 export default function MainPage(props: PageProps) {
   const ogImageUrl = new URL(asset("/home-og.png"), props.url).href;
-  const origin = `${props.url.protocol}//${props.url.host}`;
 
   return (
     <>
@@ -40,7 +25,7 @@ export default function MainPage(props: PageProps) {
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={props.url.href} />
-        <meta property="og:image" content={ogImageUrl} />
+        <meta property="og:image" content="https://raw.githubusercontent.com/hrntsm/Tunny-docs/main/static/home-og.png" />
       </Head>
       <div class="flex flex-col min-h-screen">
         <HelloBar />
