@@ -46,11 +46,11 @@ function HelloBar() {
   return (
     <a
       class="bg-blue-400 text-black border(b blue-500) p-3 text-center group"
-      href="https://github.com/hrntsm/Tunny/releases/tag/v0.5.0"
+      href="https://github.com/hrntsm/Tunny/releases/tag/v0.6.0"
     >
-      <b>Tunny v0.5</b> has been released with support for <b>constraint</b>,
+      <b>Tunny v0.6</b> has been released with support for <b>save visualized figs</b>,
       {" "}
-      <b>Hypervolume visualize</b>, <b>clustering</b>, and more!{"  "}
+      <b>more useful UI</b>, <b>enqueue specified variables</b>, and more!{"  "}
       <span class="group-hover:underline">→</span>
     </a>
   );

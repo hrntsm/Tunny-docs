@@ -7,6 +7,10 @@ description: |
 
 wip
 
+## Image of behavior
+
+![https://user-images.githubusercontent.com/5564044/73486622-db5cff00-43e8-11ea-98fb-8246dbacab6d.gif](https://user-images.githubusercontent.com/5564044/73486622-db5cff00-43e8-11ea-98fb-8246dbacab6d.gif)
+
 # Reference
 
 - [CyberAgentAILab/cmaes](https://github.com/CyberAgentAILab/cmaes)

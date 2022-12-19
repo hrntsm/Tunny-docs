@@ -1,27 +1,15 @@
 ---
 description: |
-  In this chapter of the Fresh documentation, you'll be introduced to the
-  framework. Create a new project, run it locally, edit and create pages, fetch
-  data, handle user interactions, and deploy it.
+  In this chapter, you will be introduced to the use of Tunny's Optimization window.
+  You'll learn how to run optimize, show result plot, and get result data into grasshopper.
 ---
 
 <img width="40%" alt="image" src="https://user-images.githubusercontent.com/23289252/188255969-9355c626-36d3-4d9b-8f50-0a8bda79bf8e.png">
 
-**(new in v0.5.0)**
-Allows detailed optimization settings to be performed in the UI.
+Allows detailed optimization settings to be performed in the UI.  
 See below for the meaning of each setting.
 
-# Guidelines for Selecting a Optimization Algorithm
-
-Much of the content is sourced from the official documentation of Optuna, the optimization library used by Tunny.
-
-## Summary
-
-<a href="https://optuna.readthedocs.io/en/stable/reference/samplers/index.html">
-<img width="100%" alt="image" src="https://user-images.githubusercontent.com/23289252/190851118-2084c531-d236-4eb5-8849-5802b8df5656.png">
-</a>
-
-# Useful resources for understanding each algorithm
+# Useful resources for understanding each algorithm settings
 
 ## TPE (Tree-structured Parzen Estimator)
 
@@ -66,9 +54,6 @@ TPE fits one Gaussian Mixture Model (GMM) `l(x)`to the set of parameter values 
 
 - [optuna.samplers.CmaEsSampler](https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.CmaEsSampler.html)
 
-### Image of behavior
-
-![https://user-images.githubusercontent.com/5564044/73486622-db5cff00-43e8-11ea-98fb-8246dbacab6d.gif](https://user-images.githubusercontent.com/5564044/73486622-db5cff00-43e8-11ea-98fb-8246dbacab6d.gif)
 
 - Optuna uses the following libraries
   - [https://github.com/CyberAgentAILab/cmaes](https://github.com/CyberAgentAILab/cmaes)

@@ -1,9 +1,12 @@
 ---
 description: |
-  In this chapter of the Fresh documentation, you'll be introduced to the
-  framework. Create a new project, run it locally, edit and create pages, fetch
-  data, handle user interactions, and deploy it.
+  In this chapter, you will be introduced to the use of Tunny's Optimization window.
+  You'll learn how to run optimize, show result plot, and get result data into grasshopper.
 ---
+
+# Guidelines for Selecting a Optimization Algorithm Settings
+
+Much of the content is sourced from the official documentation of Optuna, the optimization library used by Tunny.
 
 ## Flow Chart
 
@@ -11,6 +14,11 @@ This may not always be the best choice, but in general, the following flow can b
 
 <img width="100%" alt="image" src="https://user-images.githubusercontent.com/23289252/188254450-1e718d97-f81e-49a1-949b-e158837bc44f.png">
 
+## Sampler info table
+
+<a href="https://optuna.readthedocs.io/en/stable/reference/samplers/index.html">
+<img width="100%" alt="image" src="https://user-images.githubusercontent.com/23289252/190851118-2084c531-d236-4eb5-8849-5802b8df5656.png">
+</a>
 
 ## Advanced Usage
 

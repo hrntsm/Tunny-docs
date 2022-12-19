@@ -14,7 +14,7 @@ The differences are outlined below.
 - TPE uses `p(x|y)` and `p(y)` to calculate EI.
   - The posterior distribution of y, p(y|x), is not required.
   - The time complexity of TPE is O(nlogn) because of the need to sort the values in relation to dividing y in two by the value of y∗ .
-  - Since each variable is assumed to be independent (not multivariate), the overall time complexity is `O(dnlogn)` with the number of variables, d, entered above.
+  - Since each variable is assumed to be independent (not multivariate), the overall time complexity is `O(dnlog(n))` with the number of variables, d, entered above.
 
 ## About TPE Algorithm
 

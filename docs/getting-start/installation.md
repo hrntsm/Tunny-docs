@@ -3,7 +3,7 @@ description: |
   This section describes how to install Tunny.
 ---
 
-First, Tunny runs on Windows only.
+First, **Tunny runs on Windows only.**
 
 1. Download Tunny from [food4rhino](https://www.food4rhino.com/app/tunny) or [release page](https://github.com/hrntsm/tunny/releases)
 1. Right-click the file > Properties > make sure there is no "blocked" text
