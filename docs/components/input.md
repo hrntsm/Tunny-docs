@@ -36,14 +36,20 @@ The Construct Fish Attribute component allows you to set an Attribute for each t
 
 The nickname of the Construct Fish Attribute component input is stored paired with the value entered as the name of that Attribute.
 
+### Geometry
+
 The Geometry input has a special meaning;
 what is entered here will be displayed as a Geometry when the results are sorted in the FishMarket component described below.
 `Curve`, `Surface`, `Mesh`, `Brep`, and `SubD` are supported,
 but inputs other than Mesh are not recommended due to the large size of the resulting file.
 
+### Constraint
+
 The Constraint inputs are also special inputs.
 The values entered here are the constraints in the optimization.
 When this value is less than 0, the trial is feasible.
 Constraint conditions are supported by `TPE`, `GP` and `NSGAII`.
+
+Tunny's optimization constraints are called "soft constraint". Although some optimization results may not satisfy the constraint, the information that they do not satisfy is also used to find the optimal solution.
 
 <img width="60%" alt="image" src="https://user-images.githubusercontent.com/23289252/188254609-3c8432ba-3f1c-45f4-bd2a-9e3f08271c2b.png">
