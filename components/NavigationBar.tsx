@@ -6,7 +6,7 @@ export default function NavigationBar(props: { active: string }) {
     },
     {
       name: "Docs",
-      href: "/docs",
+      href: "/docs/getting-started",
     },
   ];
 
