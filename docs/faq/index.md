@@ -47,3 +47,14 @@ You can create an Attribute named "IsFAIL" - if it contains True, that Trial is 
 Note: that with methods like BO-GP that use surrogates to determine the next search point, the system may repeatedly explore the same point even if it failed.
 
 This happens because the failure provides no information to the optimization solver, so there's no indication whether the trial was good, bad, or failed.
+
+## There are two Bayesian optimization methods using Gaussian Process - "GP Optuna" and "GP BoTorch". What are the differences between them?
+
+As its name suggests, GP BoTorch is implemented using BoTorch, a general-purpose library for Bayesian optimization.
+While it's highly versatile and can be used for multi-objective and constrained Bayesian optimization,
+it has the drawback of being slow in execution.
+
+GP Optuna is a Gaussian process method that has been reimplemented to work with Optuna (Tunny) optimization.
+Although it cannot handle multi-objective optimization, it can consider constraints and operates faster than GP BoTorch.
+
+If you're not doing multi-objective Bayesian optimization, I recommend using GP Optuna.
