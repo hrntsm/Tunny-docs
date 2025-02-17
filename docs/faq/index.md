@@ -67,7 +67,7 @@ When Tunny recognizes the file, it will be deleted and optimization will stop on
 
 ## If the multi-objective optimization is not converging well, is there anything I can do to improve it?
 
-Tunny's NSGAII and TPE and GP can enter initial individuals.
+Tunny's NSGAII and TPE and GP can use initial individuals.
 Therefore, single objective optimization can be done first for each of the objective functions,
 and then the best combination of variables at that time used as the initial individuals for multiobjective optimization,
 which may lead to faster convergence.
