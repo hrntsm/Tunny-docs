@@ -78,3 +78,10 @@ Tunny can restart the Study.
 When restarting, the optimization method can be changed.
 
 Thus, you can first sample the boosted portion of the random or QMC, and then perform NSGAII with that as the initial generation.
+
+## Can the dashboard be opened easily as I just want to check the results.
+
+Click on Tunny in the menu bar at the top of the window,
+and you will see “Run Optuna Dashboard...” in it.
+
+You can launch the dashboard from there.
