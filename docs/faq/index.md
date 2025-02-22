@@ -9,7 +9,7 @@ Artifacts store the actual files, with only the file paths being linked to the T
 
 Attributes are stored directly in the Trial as string information
 
-## Why are there individuals that don't satisfy the constraints even though constraints were set?
+## Why are there trials that don't satisfy the constraints even though constraints were set?
 
 Because Tunny use soft constraints.
 
@@ -30,11 +30,51 @@ This concept is contrasted with Hard Constraints.
    2. Using soft constraints allows finding more practical solutions
    3. Expands the search space, increasing the possibility of finding better solutions
 
+## Optimization with constraints does not converge well
+
+While Tunny directly supports constraint input,
+it is not the only way to consider constraints. The following are possible
+
+1. Consider it as a direct constraint, like Tunny's.
+2. Consider constraint violations by adding penalty terms for constraints to the objective function.
+3. A function of constraints is added to the objective function to make it a multi-objective optimization.
+
+1 is as explained above. If your method supports consideration of constraints,
+you may want to try this method first.
+
+2 considers constraints by distorting the form of the objective function.
+Therefore, it does not have a significant impact in the case of methods such as GA,
+but it is different in the case of SMBO,
+such as Bayesian optimization.
+
+Bayesian optimization(GP or TPE) creates a surrogate model for the objective function.
+If there is a minimum value immediately adjacent to a point that does not satisfy the constraints,
+the surrogate model may not represent it well.
+Use caution about how the penalty term affects the shape of the objective function.
+
+Finally, there will be 3.
+Many cases where optimization with constraints does not work are situations where there are not many feasible solutions to begin with.
+
+In such cases, try solving the minimization with the constraint as the objective function.
+It is necessary to know how likely it is that a trial really satisfies the constraints.
+
+In the case of methods 1 and 2,
+if few feasible trial, sampler will only know that everything is bad and have little information about where to search.
+Therefore, it will not converge well.
+
+Basically, we recommend using methods 1 and 2,
+which take into account the constraint conditions when there are only occasional trials that do not satisfy the constraints,
+and using methods 3 for the rest of the time.
+
 ## Why is it slower compared to other optimization components like Wallacei or Galapagos?
 
-By default, Tunny saves results to separate files at each trial so that optimization can be restarted if Rhino crashes. This I/O operation makes it slower compared to other optimization components.
+By default, Tunny saves results to separate files at each trial so that optimization can be restarted if Rhino crashes.
+This I/O operation makes it slower compared to other optimization components.
 
-For faster performance, we recommend using InMemoryMode. With this setting, all results are saved at once at the end of optimization rather than during the process, which improves speed.
+For faster performance, we recommend using InMemoryMode.
+With this setting,
+all results are saved at once at the end of optimization rather than during the process,
+which improves speed.
 
 ## There are many optimization methods - which one should I choose?
 
