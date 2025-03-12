@@ -125,3 +125,16 @@ Click on Tunny in the menu bar at the top of the window,
 and you will see “Run Optuna Dashboard...” in it.
 
 You can launch the dashboard from there.
+
+## Where are the optimization results stored?
+
+By default, the results are stored in the fish.log file on the desktop and the artifacts in the artifacts folder.
+At the top of the UI you can see which path log file is being used to save the results.
+
+As optimization results accumulate, it will take longer to load the log file when TunnyUI is launched.
+It is recommended that the log file be re-created to a different one at regular intervals.
+
+You can easily create a new results file or re-reference previous files from the Quick Access at the top of the UI.
+
+Please manage your results files so that they do not grow too large.
+Overly large files can affect optimization performance.
