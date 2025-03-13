@@ -8,7 +8,9 @@ export default function DocsTitle() {
         <span class="font-bold block pb-[1px]">Tunny</span>
         <span class="font-light block pb-[1px]">docs</span>
       </a>
-      <p class="text(sm gray-700)">The next-gen Grasshopper optimization tool.</p>
+      <p class="text(sm gray-700)">
+        The next-gen Grasshopper optimization tool.
+      </p>
     </>
   );
 }

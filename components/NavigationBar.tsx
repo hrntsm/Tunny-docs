@@ -10,8 +10,8 @@ export default function NavigationBar(props: { active: string }) {
     },
     {
       name: "FAQ",
-      href: "/faq",
-    }
+      href: "/faqs/faq",
+    },
   ];
 
   return (

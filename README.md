@@ -2,7 +2,8 @@
 
 [![Made with Fresh](https://fresh.deno.dev/fresh-badge-dark.svg)](https://fresh.deno.dev)
 
-This is the documentation site for Tunny, a Grasshopper optimization tool that uses Deno's awesome framework [Fresh](https://fresh.deno.dev).
+This is the documentation site for Tunny, a Grasshopper optimization tool that
+uses Deno's awesome framework [Fresh](https://fresh.deno.dev).
 
 ## Usage
 

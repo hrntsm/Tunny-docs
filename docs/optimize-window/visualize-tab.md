@@ -13,11 +13,15 @@ Values that can be set and their meanings are as follows.
 <img width="80%" alt="image" src="https://user-images.githubusercontent.com/23289252/190850085-691f3ee1-60c2-4b3c-9e7a-0ad9a588f770.png">
 
 - Run Real-time Web Dashboard for handling optimization results.
-  - Unlike other optimization components, Tunny does not automatically launch a window to check the optimization status when optimization is performed
-  - The "5s" in the upper right corner of the above dashboard screen indicates the update frequency. If you want to check the results in real time, please set this to the desired level.
+  - Unlike other optimization components, Tunny does not automatically launch a
+    window to check the optimization status when optimization is performed
+  - The "5s" in the upper right corner of the above dashboard screen indicates
+    the update frequency. If you want to check the results in real time, please
+    set this to the desired level.
 - You can more easily check results or even see results in real time.
 - Each time you press the button, the Dashboard server starts up.
-  - Please be sure to close the server when you are done using it, as multiple servers may not load results properly if more than one server is started.
+  - Please be sure to close the server when you are done using it, as multiple
+    servers may not load results properly if more than one server is started.
 
 ## Target Study **(new in v0.6)**
 
@@ -25,7 +29,9 @@ Values that can be set and their meanings are as follows.
 
 ## Visualize type
 
-- The following types of graphing are supported. See the [Optuna.visualization](https://optuna.readthedocs.io/en/stable/reference/visualization/index.html) page below for more information.
+- The following types of graphing are supported. See the
+  [Optuna.visualization](https://optuna.readthedocs.io/en/stable/reference/visualization/index.html)
+  page below for more information.
   1. contour
   1. EDF
   1. intermediate values
@@ -46,15 +52,19 @@ Values that can be set and their meanings are as follows.
 
 - The show button displays the optimization results in the browser.
 - The save button saves the optimization results. **(new in v0.6)**
-  - The results are saved in html format so that the optimization results can be viewed interactively.
+  - The results are saved in html format so that the optimization results can be
+    viewed interactively.
   - [It can be saved in this way.](/docs/optimize-window/pareto-front.html)
 
 ## Number of cluster
 
-- Cluster the results of the Pareto front when performing multi-objective optimization.Any number of clusters can be specified.
+- Cluster the results of the Pareto front when performing multi-objective
+  optimization.Any number of clusters can be specified.
 - The k-means method uses random for clustering.
-  - The rough outline is not expected to change, but please understand that the results may vary from clustering to clustering.
+  - The rough outline is not expected to change, but please understand that the
+    results may vary from clustering to clustering.
 
 ## Include dominated trials in pareto front **(new in v0.6)**
 
-- If checked, the dominated trials will also be displayed when ParetoFront is visualized.
+- If checked, the dominated trials will also be displayed when ParetoFront is
+  visualized.

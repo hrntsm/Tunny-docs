@@ -11,7 +11,8 @@ description: |
 ### Set file path **(new in v0.6)**
 
 - The path to the file where the optimization results are saved can be set.
-- If you select an existing file, you will be asked if you want to replace it, but past data will be retained.
+- If you select an existing file, you will be asked if you want to replace it,
+  but past data will be retained.
 
 ### Open folder
 
