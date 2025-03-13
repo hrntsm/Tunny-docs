@@ -6,14 +6,17 @@ description: |
 
 <img width="40%" alt="image" src="https://user-images.githubusercontent.com/23289252/188255969-9355c626-36d3-4d9b-8f50-0a8bda79bf8e.png">
 
-Allows detailed optimization settings to be performed in the UI.  
+Allows detailed optimization settings to be performed in the UI.\
 See below for the meaning of each setting.
 
 # Useful resources for understanding each algorithm settings
 
 ## TPE (Tree-structured Parzen Estimator)
 
-TPE fits one Gaussian Mixture Model (GMM) `l(x)`to the set of parameter values associated with the best objective values, and another GMM `g(x)`to the remaining parameter values. It chooses the parameter value `x`that maximizes the ratio `l(x)/g(x)`.
+TPE fits one Gaussian Mixture Model (GMM) `l(x)`to the set of parameter values
+associated with the best objective values, and another GMM `g(x)`to the
+remaining parameter values. It chooses the parameter value `x`that maximizes the
+ratio `l(x)/g(x)`.
 
 ### API Reference
 
@@ -28,12 +31,14 @@ TPE fits one Gaussian Mixture Model (GMM) `l(x)`to the set of parameter values 
 
 ### About constraints
 
-- A value strictly larger than 0 means that a constraints is violated. A value equal to or smaller than 0 is considered feasible.
+- A value strictly larger than 0 means that a constraints is violated. A value
+  equal to or smaller than 0 is considered feasible.
 - [https://github.com/optuna/optuna/pull/3506](https://github.com/optuna/optuna/pull/3506)
 
 ### How many should the Number of startup trials be?
 
-- Bayesian optimization first performs random sampling to create a surrogate model. This is the setting for how many trials random sampling is performed.
+- Bayesian optimization first performs random sampling to create a surrogate
+  model. This is the setting for how many trials random sampling is performed.
 - **The original paper recommends “number of variables” \* 11-1.**
 
 ## BoTorch (Gaussian Process)
@@ -44,7 +49,8 @@ TPE fits one Gaussian Mixture Model (GMM) `l(x)`to the set of parameter values 
 
 ### About constrains
 
-- A value strictly larger than 0 means that a constraints is violated. A value equal to or smaller than 0 is considered feasible.
+- A value strictly larger than 0 means that a constraints is violated. A value
+  equal to or smaller than 0 is considered feasible.
 - more detail
   [Constraints · BoTorch](https://botorch.org/docs/constraints#outcome-constraints)
 
@@ -53,7 +59,6 @@ TPE fits one Gaussian Mixture Model (GMM) `l(x)`to the set of parameter values 
 ### API Reference
 
 - [optuna.samplers.CmaEsSampler](https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.CmaEsSampler.html)
-
 
 - Optuna uses the following libraries
   - [https://github.com/CyberAgentAILab/cmaes](https://github.com/CyberAgentAILab/cmaes)
@@ -72,13 +77,15 @@ Multi-objective sampler using the NSGA-II algorithm.
 
 ### What difference of corossover algorithm
 
-- You can select several variants of the crossover option from `uniform` (default), `blxalpha`, `sbx`, `vsbx`, `undx`, and `spx`.
+- You can select several variants of the crossover option
+  from `uniform` (default), `blxalpha`, `sbx`, `vsbx`, `undx`, and `spx`.
 - detail
   - [https://github.com/optuna/optuna/pull/2903](https://github.com/optuna/optuna/pull/2903)
 
 ### About constraints
 
-- A value strictly larger than 0 means that a constraints is violated. A value equal to or smaller than 0 is considered feasible.
+- A value strictly larger than 0 means that a constraints is violated. A value
+  equal to or smaller than 0 is considered feasible.
 - [https://github.com/optuna/optuna/pull/3506](https://github.com/optuna/optuna/pull/3506)
 
 ## QMC (Quasi-Monte Carlo)
@@ -89,7 +96,8 @@ A Quasi Monte Carlo Sampler that generates low-discrepancy sequences.
 
 - [optuna.samplers.QMCSampler](https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.QMCSampler.html)
 
-This process uses scipy inside optuna. If you want to know the detailed process, please refer to the following scipy documentation.
+This process uses scipy inside optuna. If you want to know the detailed process,
+please refer to the following scipy documentation.
 
 - [scipy.stats.qmc](https://docs.scipy.org/doc/scipy/reference/stats.qmc.html)
 
@@ -99,6 +107,9 @@ This process uses scipy inside optuna. If you want to know the detailed process,
 
 ### When should QMC be selected instead of random?
 
-Random sampling, as the name implies, samples randomly. This means that the spacing between the sampled points is not guaranteed to be far apart, and it is possible to sample a point right next to a point that has already been sampled.  
-On the other hand, quasi-Monte Carlo allows for random sampling with some spacing.
-For example, if you want to check the entire solution space with a small sample, you may be able to do so faster than with random.
+Random sampling, as the name implies, samples randomly. This means that the
+spacing between the sampled points is not guaranteed to be far apart, and it is
+possible to sample a point right next to a point that has already been sampled.\
+On the other hand, quasi-Monte Carlo allows for random sampling with some
+spacing. For example, if you want to check the entire solution space with a
+small sample, you may be able to do so faster than with random.

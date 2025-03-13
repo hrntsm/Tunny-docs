@@ -12,10 +12,6 @@ const LINKS = [
     href: "https://github.com/hrntsm/Tunny/blob/main/CODE_OF_CONDUCT.md",
   },
   {
-    title: "Discussions",
-    href: "https://github.com/hrntsm/Tunny/discussions"
-  },
-  {
     title: "Changelog",
     href: "https://github.com/hrntsm/Tunny/blob/main/CHANGELOG.md",
   },
@@ -34,7 +30,10 @@ export default function Footer() {
       <div class="text(gray-600 center)">
         <span>© {new Date().getFullYear()} hrntsm</span>
       </div>
-      <a href="https://fresh.deno.dev/" style="align-items: center; display: flex; justify-content: center;">
+      <a
+        href="https://fresh.deno.dev/"
+        style="align-items: center; display: flex; justify-content: center;"
+      >
         <img
           src="/fresh-badge.svg"
           alt="Made with Fresh"

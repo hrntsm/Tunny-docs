@@ -27,13 +27,17 @@ Values that can be set and their meanings are as follows.
 
 ## Output the above number models
 
-- The model with the number entered here is restored from the optimization results file and is the output of the component.
-- Model numbers are easiest to see in the diagrams produced from each plotting function.
-  - In the example below, model number 424 with a value of -11.49 for the objective ID:0 is selected.
+- The model with the number entered here is restored from the optimization
+  results file and is the output of the component.
+- Model numbers are easiest to see in the diagrams produced from each plotting
+  function.
+  - In the example below, model number 424 with a value of -11.49 for the
+    objective ID:0 is selected.
 
 <img width="80%" alt="image" src="https://user-images.githubusercontent.com/23289252/178103519-70286138-3dc4-4d65-ae66-7c918e5b4805.png">
 
 ## Reflect the result on the sliders
 
 - The result of the input model number is reflected in Slider and Genepool.
-- Only one result can be reflected in Grasshopper's slider, so if multiple values are entered for Model Number, the first one will be used.
+- Only one result can be reflected in Grasshopper's slider, so if multiple
+  values are entered for Model Number, the first one will be used.

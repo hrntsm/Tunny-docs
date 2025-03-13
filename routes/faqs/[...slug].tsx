@@ -11,7 +11,7 @@ import {
   SLUGS,
   TABLE_OF_CONTENTS,
   TableOfContentsEntry,
-} from "../../data/docs.ts";
+} from "../../data/faqs.ts";
 
 interface Data {
   page: Page;
@@ -28,7 +28,7 @@ export const handler: Handlers<Data> = {
     if (slug === "") {
       return new Response("", {
         status: 307,
-        headers: { location: "/faq/faq" },
+        headers: { location: "/faqs/faq" },
       });
     }
     const entry = TABLE_OF_CONTENTS[slug];
@@ -55,14 +55,17 @@ export default function DocsPage(props: PageProps<Data>) {
     <>
       <Head>
         <title>{props.data.page?.title ?? "Not Found"} | Tunny docs</title>
-        <link rel="stylesheet" href={`/gfm.css?build=${__FRSH_BUILD_ID}`} />
+        <link rel="stylesheet" href={`/gfm.css?build=1.7.3`} />
         {description && <meta name="description" content={description} />}
-        <meta property="og:image" content="https://raw.githubusercontent.com/hrntsm/Tunny-docs/main/static/home-og.png" />
+        <meta
+          property="og:image"
+          content="https://raw.githubusercontent.com/hrntsm/Tunny-docs/main/static/home-og.png"
+        />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <div class="flex flex-col min-h-screen">
         <DocsHeader />
-        <NavigationBar active="/faq" />
+        <NavigationBar active="/faqs/faq" />
         <Main path={props.url.pathname} page={props.data.page} />
         <Footer />
       </div>
