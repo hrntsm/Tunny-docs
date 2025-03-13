@@ -46,11 +46,9 @@ function HelloBar() {
   return (
     <a
       class="bg-blue-400 text-black border(b blue-500) p-3 text-center group"
-      href="https://github.com/hrntsm/Tunny/releases/tag/v0.6.0"
+      href="https://github.com/hrntsm/Tunny/releases/tag/v1.0.0-beta.3"
     >
-      <b>Tunny v0.6</b> has been released with support for <b>save visualized figs</b>,
-      {" "}
-      <b>more useful UI</b>, <b>enqueue specified variables</b>, and more!{"  "}
+      <b>Tunny v1.0 beta3</b> has been released with <b>completely new modern UI</b> and <b>mac support</b>,
       <span class="group-hover:underline">→</span>
     </a>
   );
@@ -67,9 +65,6 @@ function Hero() {
           Documentation
         </a>
       </div>
-      {/* <section class="w-full flex justify-center items-center flex-col bg-blue-300">
-        <LemonDrop />
-      </section> */}
     </>
   );
 }
