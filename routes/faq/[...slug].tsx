@@ -28,7 +28,7 @@ export const handler: Handlers<Data> = {
     if (slug === "") {
       return new Response("", {
         status: 307,
-        headers: { location: "/docs/getting-start" },
+        headers: { location: "/faq/faq" },
       });
     }
     const entry = TABLE_OF_CONTENTS[slug];
@@ -62,7 +62,7 @@ export default function DocsPage(props: PageProps<Data>) {
       </Head>
       <div class="flex flex-col min-h-screen">
         <DocsHeader />
-        <NavigationBar active="/docs" />
+        <NavigationBar active="/faq" />
         <Main path={props.url.pathname} page={props.data.page} />
         <Footer />
       </div>
