@@ -161,3 +161,9 @@ Quick Access at the top of the UI.
 
 Please manage your results files so that they do not grow too large. Overly
 large files can affect optimization performance.
+
+## Latin Hypercube Sampling is not supported?
+
+Instead of LHS, Tunny supports QMC.
+It is known that QMC samples more uniformly than LHS for a smaller number of samples.
+See [this paper](https://arxiv.org/abs/1505.02350) for more details.
