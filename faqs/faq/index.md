@@ -167,3 +167,13 @@ large files can affect optimization performance.
 Instead of LHS, Tunny supports QMC.
 It is known that QMC samples more uniformly than LHS for a smaller number of samples.
 See [this paper](https://arxiv.org/abs/1505.02350) for more details.
+
+## How can I optimize for the same settings as Wallacei?
+
+Wallacei uses the following algorithm
+
+- Optimization method: NSGA-II
+- Crossover: SBX crossover
+- Mutation: Polynomial mutation
+
+Tunny uses BLX-α crossover and Uniform mutation by default, so you can make the same settings by changing the values from the settings section.
