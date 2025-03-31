@@ -177,3 +177,14 @@ Wallacei uses the following algorithm
 - Mutation: Polynomial mutation
 
 Tunny uses BLX-α crossover and Uniform mutation by default, so you can make the same settings by changing the values from the settings section.
+
+## Is it possible to sample without duplication?
+
+Each sampler computes a search point determined by the optimization algorithm without checking for duplicates,
+so it is not possible to optimize without duplicates.
+However, it is possible to skip the computation of the objective function in case of duplication.
+
+If "Ignore Duplicate Sampling" is checked in the sampler's Other Settings Group, the results of previous calculations will be referenced and registered in the event of a duplication.
+
+Note that a check will be made on each trial to see if there are any duplicates.
+This check becomes more expensive as the number of trials increases.
