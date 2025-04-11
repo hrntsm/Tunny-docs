@@ -3,6 +3,8 @@ description: |
   This section is Tunny's Frequently Asked Questions
 ---
 
+# Answers to the Ultimate Question of Life, the Universe, and Tunny.
+
 ## What's the difference between Artifacts and Attributes, since both add information to Trials?
 
 Artifacts store the actual files, with only the file paths being linked to the
