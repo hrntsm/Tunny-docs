@@ -47,5 +47,8 @@
   },
   "license": {
     "title": "License"
+  },
+  "subscription": {
+    "title": "Subscription"
   }
 }
