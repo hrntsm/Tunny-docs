@@ -190,3 +190,13 @@ If "Ignore Duplicate Sampling" is checked in the sampler's Other Settings Group,
 
 Note that a check will be made on each trial to see if there are any duplicates.
 This check becomes more expensive as the number of trials increases.
+
+## What is AUTO Sampler?
+
+The AUTO sampler automatically selects sampling methods that performs above a certain level, depending on the problem.
+
+Note that this is not necessarily the best sampler, although it will produce a certain level of performance.
+
+For more information, check the following
+
+[AutoSampler: Automatic Selection of Optimization Algorithms in Optuna](https://medium.com/optuna/autosampler-automatic-selection-of-optimization-algorithms-in-optuna-1443875fd8f9)
