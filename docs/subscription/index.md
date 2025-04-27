@@ -12,12 +12,17 @@ If you need a license, please apply for one from the following e-mail address.
 
 The subject of the email should be **“Tunny License Request”**.
 
-
 [Send request](mailto:support@hrntsm.com) or send e-mail to `support[at]hrntsm[dot]com`
 
-
 ## Difference of license version
-| Type         | Description                                                                                           |
-| ------------ | ----------------------------------------------------------------------------------------------------- |
-| Community    | This is when there is no valid license.  The sampler can only use `AUTO Sampler` and `Random Sampler`. Other than that, the functions are the same as other types. |
-| Professional | All functions are available.                                                                          |
+
+Only the available samplers are different.
+
+| Edition         | Community | Professional |
+| --------------- | --------- | ------------ |
+| Need License    |           | ✔            |
+| Auto Sampler    | ✔         | ✔            |
+| TPE Sampler     | ✔         | ✔            |
+| NSGA-II Sampler | ✔         | ✔            |
+| Random Sampler  | ✔         | ✔            |
+| Other Sampler   |           | ✔            |
