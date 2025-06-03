@@ -3,7 +3,7 @@ import { PageProps } from "$fresh/server.ts";
 import Footer from "../components/Footer.tsx";
 import * as FeatureIcons from "../components/FeatureIcons.tsx";
 
-const TITLE = "Tunny documentation";
+const TITLE = "Tunny Documentations";
 const DESCRIPTION =
   "Tunny is the next-gen Grasshopper optimization tool. it includes previously unseen features such as constrained multi-objective optimization, Quasi-MonteCarlo sampling and dashboards for results analysis etc.";
 
@@ -19,7 +19,7 @@ export default function MainPage(props: PageProps) {
         <meta property="og:url" content={props.url.href} />
         <meta
           property="og:image"
-          content="https://raw.githubusercontent.com/hrntsm/Tunny-docs/main/static/home-og.png"
+          content="https://raw.githubusercontent.com/Tunny-gh/Tunny-docs/main/static/home-og.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
