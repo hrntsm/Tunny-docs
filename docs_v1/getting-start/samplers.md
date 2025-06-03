@@ -5,8 +5,9 @@ description: |
 
 Tunny can utilize a number of sampling techniques.
 
-The table below summarizes the optimizations supported by each sampler.
-Note that Tunny's UI will automatically display the available methods depending on the problem.
+The table below summarizes the optimizations supported by each sampler. Note
+that Tunny's UI will automatically display the available methods depending on
+the problem.
 
 | Name            | Single-Objective | Multi-Objective | Constraints | Human-in-the-loop |
 | --------------- | ---------------- | --------------- | ----------- | ----------------- |

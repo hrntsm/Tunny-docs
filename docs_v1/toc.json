@@ -3,7 +3,8 @@
     "title": "Getting Start",
     "pages": [
       ["installation", "Installation"],
-      ["samplers", "Samplers"]
+      ["samplers", "Support Samplers"],
+      ["how-to-select-sampler", "How to Select Sampler"]
     ]
   },
   "gh-components": {
@@ -20,11 +21,11 @@
     "title": "Tunny UI",
     "pages": [
       ["optimize-tab", "Optimize Tab"],
-      ["how-to-select-sampler", "How to Select Sampler"],
       ["visualize-tab", "Visualize Tab"],
       ["output-tab", "Output Tab"],
       ["settings-tab", "Settings Tab"],
-      ["file-tab", "File Tab"]
+      ["file-tab", "File Tab"],
+      ["menu-items", "Menu Items"]
     ]
   },
   "software-license": {

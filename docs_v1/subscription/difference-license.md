@@ -5,36 +5,36 @@ description: |
 
 |              | Community | Professional |
 | ------------ | --------- | ------------ |
-| Need License |           | ✔            |
+| Need License |           | ✓            |
 
 | Sampler         | Community | Professional |
 | --------------- | --------- | ------------ |
-| Auto Selection  | ✔         | ✔            |
+| Auto Selection  | ✓         | ✓            |
 |                 |           |              |
-| TPE             | ✔         | ✔            |
-| cTPE            |           | ✔            |
-| GP:Optuna       |           | ✔            |
-| GP:BoTorch      |           | ✔            |
-| HEBO            |           | ✔            |
+| TPE             | ✓         | ✓            |
+| cTPE            |           | ✓            |
+| GP:Optuna       |           | ✓            |
+| GP:BoTorch      |           | ✓            |
+| HEBO            |           | ✓            |
 |                 |           |              |
-| NSGA-II         | ✔         | ✔            |
-| NSGA-III        |           | ✔            |
-| MOEA/D          |           | ✔            |
-| DE              |           | ✔            |
+| NSGA-II         | ✓         | ✓            |
+| NSGA-III        |           | ✓            |
+| MOEA/D          |           | ✓            |
+| DE              |           | ✓            |
 |                 |           |              |
-| CMA-ES          |           | ✔            |
-| MO-CMA-ES       |           | ✔            |
+| CMA-ES          |           | ✓            |
+| MO-CMA-ES       |           | ✓            |
 |                 |           |              |
-| Random          | ✔         | ✔            |
-| QMC             |           | ✔            |
-| BruteForce      | ✔         | ✔            |
+| Random          | ✓         | ✓            |
+| QMC             |           | ✓            |
+| BruteForce      | ✓         | ✓            |
 |                 |           |              |
-| Preferential GP |           | ✔            |
+| Preferential GP |           | ✓            |
 
 | Technical Support | Community | Professional |
 | ----------------- | --------- | ------------ |
-| Forum             | ✔         | ✔            |
-| E-mail            |           | ✔            |
+| Forum             | ✓         | ✓            |
+| E-mail            |           | ✓            |
 
 ## How to Activate License
 
