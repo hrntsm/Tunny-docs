@@ -42,7 +42,7 @@ function HelloBar() {
       class="bg-blue-400 text-black border(b blue-500) p-3 text-center group"
       href="https://github.com/hrntsm/Tunny/releases/tag/v1.0.0-beta.3"
     >
-      <b>Tunny v1.0 beta3</b> has been released with{" "}
+      <b>Tunny v1.0 RC1</b> has been released with{" "}
       <b>completely new modern UI</b> and <b>mac support</b>,
       <span class="group-hover:underline">→</span>
     </a>
@@ -168,22 +168,17 @@ function GettingStarted() {
           </a>
         </li>
         <li>
-          2. Right-click the file {">"} Properties {">"}{" "}
-          make sure there is no "blocked" text
+          2. Drag and Drop the downloaded .yak file into the Rhino.
         </li>
         <li>
-          3. In Grasshopper, choose File {">"} Special Folders {">"}{" "}
-          Components folder. Move Tunny folder you downloaded there.
+          3. Restart Rhino.
         </li>
         <li>
-          4. Restart Rhino and Grasshopper
-        </li>
-        <li>
-          5. In Grasshopper, Place the Tunny component and double-click the icon
+          4. In Grasshopper, Place the Tunny component and double-click the icon
           to start downloading the necessary libraries.
         </li>
         <li>
-          6. Enjoy!
+          5. Enjoy!
         </li>
       </ol>
 
