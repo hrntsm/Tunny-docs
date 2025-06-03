@@ -4,7 +4,6 @@ import { frontMatter, gfm } from "../../utils/markdown.ts";
 
 import DocsTitle from "../../components/DocsTitle.tsx";
 import DocsHeader from "../../components/DocsHeader.tsx";
-import DocsSidebar from "../../components/DocsSidebar.tsx";
 import Footer from "../../components/Footer.tsx";
 import NavigationBar from "../../components/NavigationBar.tsx";
 import {
@@ -12,6 +11,7 @@ import {
   TABLE_OF_CONTENTS,
   TableOfContentsEntry,
 } from "../../data/faqs.ts";
+import FaqsSidebar from "../../components/FaqsSidebar.tsx";
 
 interface Data {
   page: Page;
@@ -104,7 +104,7 @@ function MobileSidebar(props: { path: string }) {
             <DocsTitle />
           </div>
           <nav class="pt-2 pb-16 px-4 overflow-x-auto">
-            <DocsSidebar path={props.path} />
+            <FaqsSidebar path={props.path} />
           </nav>
         </div>
       </div>
@@ -115,7 +115,7 @@ function MobileSidebar(props: { path: string }) {
 function DesktopSidebar(props: { path: string }) {
   return (
     <nav class="w-[16rem] flex-shrink-0 hidden md:block py-8 pr-4 border(r-2 gray-100)">
-      <DocsSidebar path={props.path} />
+      <FaqsSidebar path={props.path} />
     </nav>
   );
 }

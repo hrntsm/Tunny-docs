@@ -14,7 +14,7 @@ export default function NavigationBar(props: { active: string }) {
     },
     {
       name: "FAQ",
-      href: "/faqs/faq",
+      href: "/faqs/basics-and-overview",
     },
   ];
 

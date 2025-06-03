@@ -6,6 +6,8 @@ description: |
 :fish:**Tunny**:fish: is Grasshopper's optimization component using Optuna, an
 open source hyperparameter auto-optimization framework.
 
+This page is the documentation for `version 1` of Tunny.
+
 Tunny is inspired by components such as Galapagos,
 [Opossum](https://www.food4rhino.com/en/app/opossum-optimization-solver-surrogate-models),
 and [Wallacei](https://www.food4rhino.com/en/app/wallacei), and can be used in a
