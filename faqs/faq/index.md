@@ -166,9 +166,9 @@ large files can affect optimization performance.
 
 ## Latin Hypercube Sampling is not supported?
 
-Instead of LHS, Tunny supports QMC.
-It is known that QMC samples more uniformly than LHS for a smaller number of samples.
-See [this paper](https://arxiv.org/abs/1505.02350) for more details.
+Instead of LHS, Tunny supports QMC. It is known that QMC samples more uniformly
+than LHS for a smaller number of samples. See
+[this paper](https://arxiv.org/abs/1505.02350) for more details.
 
 ## How can I optimize for the same settings as Wallacei?
 
@@ -178,24 +178,30 @@ Wallacei uses the following algorithm
 - Crossover: SBX crossover
 - Mutation: Polynomial mutation
 
-Tunny uses BLX-α crossover and Uniform mutation by default, so you can make the same settings by changing the values from the settings section.
+Tunny uses BLX-α crossover and Uniform mutation by default, so you can make the
+same settings by changing the values from the settings section.
 
 ## Is it possible to sample without duplication?
 
-Each sampler computes a search point determined by the optimization algorithm without checking for duplicates,
-so it is not possible to optimize without duplicates.
-However, it is possible to skip the computation of the objective function in case of duplication.
+Each sampler computes a search point determined by the optimization algorithm
+without checking for duplicates, so it is not possible to optimize without
+duplicates. However, it is possible to skip the computation of the objective
+function in case of duplication.
 
-If "Ignore Duplicate Sampling" is checked in the sampler's Other Settings Group, the results of previous calculations will be referenced and registered in the event of a duplication.
+If "Ignore Duplicate Sampling" is checked in the sampler's Other Settings Group,
+the results of previous calculations will be referenced and registered in the
+event of a duplication.
 
 Note that a check will be made on each trial to see if there are any duplicates.
 This check becomes more expensive as the number of trials increases.
 
 ## What is AUTO Sampler?
 
-The AUTO sampler automatically selects sampling methods that performs above a certain level, depending on the problem.
+The AUTO sampler automatically selects sampling methods that performs above a
+certain level, depending on the problem.
 
-Note that this is not necessarily the best sampler, although it will produce a certain level of performance.
+Note that this is not necessarily the best sampler, although it will produce a
+certain level of performance.
 
 For more information, check the following
 

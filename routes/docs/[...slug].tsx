@@ -93,8 +93,7 @@ function MobileSidebar(props: { path: string }) {
         class="hidden toggle"
         id="docs_sidebar"
         autocomplete="off"
-      >
-      </input>
+      />
       <div class="fixed inset-0 flex z-40 hidden toggled">
         <label
           class="absolute inset-0 bg-gray-600 opacity-75"
@@ -154,7 +153,7 @@ function ForwardBackButtons(props: { slug: string }) {
     <div class="mt-8 flex flex(col md:row) gap-4">
       {previous && (
         <a href={previous.href} class={`${button} text-left`}>
-          <span class={upper}>{"←"} Previous</span>
+          <span class={upper}>← Previous</span>
           <span class={lower}>
             <span class={category}>
               {previous.category
@@ -167,7 +166,7 @@ function ForwardBackButtons(props: { slug: string }) {
       )}
       {next && (
         <a href={next.href} class={`${button} text-right`}>
-          <span class={upper}>Next {"→"}</span>
+          <span class={upper}>Next →</span>
           <span class={lower}>
             <span class={category}>
               {next.category
