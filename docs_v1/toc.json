@@ -1,0 +1,41 @@
+{
+  "getting-start": {
+    "title": "Getting Start",
+    "pages": [
+      ["installation", "Installation"],
+      ["samplers", "Samplers"]
+    ]
+  },
+  "gh-components": {
+    "title": "GH Components",
+    "pages": [
+      ["input", "Input"],
+      ["output", "Output"]
+    ]
+  },
+  "rhino-commands": {
+    "title": "Rhino Commands"
+  },
+  "tunny-ui": {
+    "title": "Tunny UI",
+    "pages": [
+      ["optimize-tab", "Optimize Tab"],
+      ["how-to-select-sampler", "How to Select Sampler"],
+      ["visualize-tab", "Visualize Tab"],
+      ["output-tab", "Output Tab"],
+      ["settings-tab", "Settings Tab"],
+      ["file-tab", "File Tab"]
+    ]
+  },
+  "software-license": {
+    "title": "Software License"
+  },
+  "subscription": {
+    "title": "Subscription",
+    "pages": [
+      ["get-license", "Get License"],
+      ["difference-license", "Difference of License Versions"],
+      ["activate-license", "Activate License"]
+    ]
+  }
+}

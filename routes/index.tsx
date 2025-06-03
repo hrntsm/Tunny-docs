@@ -40,7 +40,7 @@ function HelloBar() {
   return (
     <a
       class="bg-blue-400 text-black border(b blue-500) p-3 text-center group"
-      href="https://github.com/hrntsm/Tunny/releases/tag/v1.0.0-beta.3"
+      href="https://github.com/Tunny-gh/Tunny-v1/releases"
     >
       <b>Tunny v1.0 RC1</b> has been released with{" "}
       <b>completely new modern UI</b> and <b>mac support</b>,
@@ -54,7 +54,7 @@ function Hero() {
     <>
       <div class="flex justify-end items-center bg-blue-300">
         <a
-          href="/docs/getting-start"
+          href="/docs_v1/getting-start"
           class="border(1 black) inline-flex items-center h-10 px-4 m-4 text-black bg-transparent rounded hover:bg-white"
         >
           Documentation
@@ -147,7 +147,7 @@ function GettingStarted() {
         </a>
       </h2>
       <p class="text-gray-600">
-        First, Tunny runs on Windows only.
+        From version 1, Tunny supports both mac and windows.
       </p>
 
       <ol class="text-gray-600" type="1">
@@ -157,18 +157,18 @@ function GettingStarted() {
             href="https://www.food4rhino.com/en/app/tunny"
             class="text-blue-600 hover:underline"
           >
-            food4rhino
+            Food4Rhino
           </a>{"  "}
           or{"  "}
           <a
-            href="https://github.com/hrntsm/tunny/releases"
+            href="https://github.com/Tunny-gh/Tunny-v1/releases"
             class="text-blue-600 hover:underline"
           >
-            release page.
+            Release page.
           </a>
         </li>
         <li>
-          2. Drag and Drop the downloaded .yak file into the Rhino.
+          2. Drag and Drop the downloaded ".yak" file into the Rhino.
         </li>
         <li>
           3. Restart Rhino.
@@ -185,7 +185,7 @@ function GettingStarted() {
       <p class="text-gray-600">
         Please see{" "}
         <a
-          href="/docs/getting-start"
+          href="/docs_v1/getting-start"
           class="text-blue-600 hover:underline"
         >
           the documentation page

@@ -6,6 +6,7 @@ import * as $_404 from "./routes/_404.tsx";
 import * as $_500 from "./routes/_500.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $docs_slug_ from "./routes/docs/[...slug].tsx";
+import * as $docs_v1_slug_ from "./routes/docs_v1/[...slug].tsx";
 import * as $faqs_slug_ from "./routes/faqs/[...slug].tsx";
 import * as $gfm_css from "./routes/gfm.css.ts";
 import * as $index from "./routes/index.tsx";
@@ -19,6 +20,7 @@ const manifest = {
     "./routes/_500.tsx": $_500,
     "./routes/_app.tsx": $_app,
     "./routes/docs/[...slug].tsx": $docs_slug_,
+    "./routes/docs_v1/[...slug].tsx": $docs_v1_slug_,
     "./routes/faqs/[...slug].tsx": $faqs_slug_,
     "./routes/gfm.css.ts": $gfm_css,
     "./routes/index.tsx": $index,
