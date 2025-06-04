@@ -71,3 +71,27 @@ Values that can be set and their meanings are as follows.
     step of Hypervolume calculated from the results of the first two objective
     functions is displayed.
     - If the Hypervolume Ratio frequently exceeds 1, it is not yet converged.
+
+## Sampler Settings
+
+Tunny uses the Optuna sampler as is. Please refer to the Optuna sampler page
+listed in the table below for the each value of the sampler settings.
+
+| Name            | Link                                                                                                                                                                                              |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| AUTO Sampler    | https://hub.optuna.org/samplers/auto_sampler/                                                                                                                                                     |
+| TPE             | https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.TPESampler.html                                                                                              |
+| cTPE            | https://hub.optuna.org/samplers/ctpe/                                                                                                                                                             |
+| GP-Optuna       | https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.GPSampler.html                                                                                               |
+| GP-BoTorch      | https://optuna-integration.readthedocs.io/en/stable/reference/generated/optuna_integration.BoTorchSampler.html                                                                                    |
+| GP-Preferential | https://optuna-dashboard.readthedocs.io/en/stable/_generated/optuna_dashboard.preferential.samplers.gp.PreferentialGPSampler.html#optuna_dashboard.preferential.samplers.gp.PreferentialGPSampler |
+| HEBO            | https://hub.optuna.org/samplers/hebo/                                                                                                                                                             |
+| NSGA-II         | https://optuna.org/samplers/nsgaii_with_initial_trials/                                                                                                                                           |
+| NSGA-III        | https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.NSGAIIISampler.html                                                                                          |
+| MOEA/D          | https://hub.optuna.org/samplers/moead/                                                                                                                                                            |
+| DE              | https://hub.optuna.org/samplers/differential_evolution/                                                                                                                                           |
+| CMA-ES          | https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.CmaEsSampler.html                                                                                            |
+| MO-CMA-ES       | https://hub.optuna.org/samplers/mocma/                                                                                                                                                            |
+| Random          | https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.RandomSampler.html                                                                                           |
+| QMC             | https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.QMCSampler.html                                                                                              |
+| BruteForce      | https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.BruteForceSampler.html                                                                                       |
