@@ -46,7 +46,7 @@ The specific characteristics of each sampling technique are as follows
 | HEBO            | Even problems with strong nonlinearities and multimodalities converge very fast. |
 |                 |                                                                                  |
 | NSGA-II         | It is a versatile method used by Wallacei and others.                            |
-| NSGA-III        | It is a multi-objective, enhanced version of the NSGA-II                         |
+| NSGA-III        | It is a multi-objective(more than 3), enhanced version of the NSGA-II            |
 | MOEA/D          | It is a specialized method for multi-objective optimization                      |
 | DE              | Differential Evolution Algorithm.                                                |
 |                 |                                                                                  |

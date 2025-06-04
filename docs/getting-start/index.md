@@ -6,6 +6,8 @@ description: |
 :fish:**Tunny**:fish: is Grasshopper's optimization component using Optuna, an
 open source hyperparameter auto-optimization framework.
 
+This page is the documentation for `version 0` of Tunny.
+
 This component support below optimization algorithms.
 
 1. Bayesian optimization(TPE)
