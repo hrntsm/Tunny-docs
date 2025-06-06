@@ -3,7 +3,7 @@
     "title": "Getting Start",
     "pages": [
       ["installation", "Installation"],
-      ["samplers", "Support Samplers"],
+      ["samplers", "Supported Samplers"],
       ["how-to-select-sampler", "How to Select Sampler"]
     ]
   },
