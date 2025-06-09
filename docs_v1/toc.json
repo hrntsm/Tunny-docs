@@ -48,5 +48,8 @@
       ["difference-license", "Difference of License Versions"],
       ["activate-license", "Activate License"]
     ]
+  },
+  "citation": {
+    "title": "Citation"
   }
 }
