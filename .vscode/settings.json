@@ -3,5 +3,8 @@
   "deno.lint": true,
   "deno.importMap": "./.vscode/import_map.json",
   "deno.codeLens.test": true,
-  "editor.defaultFormatter": "denoland.vscode-deno"
+  "editor.defaultFormatter": "denoland.vscode-deno",
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
