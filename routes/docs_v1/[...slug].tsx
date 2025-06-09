@@ -10,8 +10,8 @@ import {
   SLUGS,
   TABLE_OF_CONTENTS,
   TableOfContentsEntry,
-} from "../../data/faqs.ts";
-import FaqsSidebar from "../../components/FaqsSidebar.tsx";
+} from "../../data/docs_v1.ts";
+import DocsV1Sidebar from "../../components/DocsV1Sidebar.tsx";
 
 interface Data {
   page: Page;
@@ -28,7 +28,7 @@ export const handler: Handlers<Data> = {
     if (slug === "") {
       return new Response("", {
         status: 307,
-        headers: { location: "/faqs/faq" },
+        headers: { location: "/docs_v1/getting-start" },
       });
     }
     const entry = TABLE_OF_CONTENTS[slug];
@@ -65,7 +65,7 @@ export default function DocsPage(props: PageProps<Data>) {
       </Head>
       <div class="flex flex-col min-h-screen">
         <DocsHeader />
-        <NavigationBar active="/faqs/faq" />
+        <NavigationBar active="/docs" />
         <Main path={props.url.pathname} page={props.data.page} />
         <Footer />
       </div>
@@ -104,7 +104,7 @@ function MobileSidebar(props: { path: string }) {
             <DocsTitle />
           </div>
           <nav class="pt-2 pb-16 px-4 overflow-x-auto">
-            <FaqsSidebar path={props.path} />
+            <DocsV1Sidebar path={props.path} />
           </nav>
         </div>
       </div>
@@ -115,7 +115,7 @@ function MobileSidebar(props: { path: string }) {
 function DesktopSidebar(props: { path: string }) {
   return (
     <nav class="w-[16rem] flex-shrink-0 hidden md:block py-8 pr-4 border(r-2 gray-100)">
-      <FaqsSidebar path={props.path} />
+      <DocsV1Sidebar path={props.path} />
     </nav>
   );
 }

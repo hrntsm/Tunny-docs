@@ -6,27 +6,15 @@ description: |
 :fish:**Tunny**:fish: is Grasshopper's optimization component using Optuna, an
 open source hyperparameter auto-optimization framework.
 
-This page is the documentation for `version 0` of Tunny.
+This page is the documentation for `version 1` of Tunny.
 
-This component support below optimization algorithms.
+For more information on how to use the examples, please go to the Examples page
+from the sidebar on the left.
 
-1. Bayesian optimization(TPE)
-1. Bayesian optimization(GP)
-1. Genetic algorithm(NSGA-II)
-1. Evolution strategy(CMA-ES)
-1. Quasi-Monte Carlo
-1. Random
-1. Grid
-
-TPE, GP and NSGA-II also **support multi-objective optimization with
-constrains**. A very significant feature of this component is its support for
-**Bayesian optimization**.
-
-It is inspired by components such as Galapagos,
-[opossum](https://www.food4rhino.com/en/app/opossum-optimization-solver-surrogate-models),
-and [wallacei](https://www.food4rhino.com/en/app/wallacei), and can be used in a
-similar way to them. For more information on how to use it, click here to see
-document.
+Tunny is inspired by components such as Galapagos,
+[Opossum](https://www.food4rhino.com/en/app/opossum-optimization-solver-surrogate-models),
+and [Wallacei](https://www.food4rhino.com/en/app/wallacei), and can be used in a
+similar way to them.
 
 Tunny has been wrapped around Optuna; it might be called Optuna's UI for
 Grasshopper. For this reason, Optuna is also introduced. The following is taken

@@ -1,5 +1,14 @@
 {
-  "faq": {
-    "title": "FAQ"
+  "basics-and-overview": {
+    "title": "Basics and Overview"
+  },
+  "constraints-and-performance": {
+    "title": "Constraints and Performance"
+  },
+  "algorithms-and-methods": {
+    "title": "Algorithms and Methods"
+  },
+  "multi-objective-and-operations": {
+    "title": "Multi-Objective and Operations"
   }
 }

@@ -5,12 +5,16 @@ export default function NavigationBar(props: { active: string }) {
       href: "/",
     },
     {
-      name: "Docs",
+      name: "Docs v1",
+      href: "/docs_v1/getting-start",
+    },
+    {
+      name: "Docs v0",
       href: "/docs/getting-start",
     },
     {
       name: "FAQ",
-      href: "/faqs/faq",
+      href: "/faqs/basics-and-overview",
     },
   ];
 
