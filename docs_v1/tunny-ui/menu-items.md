@@ -1,11 +1,31 @@
 ---
-description: |
-  In this chapter, you will be introduced to the use of Tunny's Optimization window.
-  You'll learn how to run optimize, show result plot, and get result data into grasshopper.
+description:
 ---
 
-In this chapter, you will be introduced to the use of Tunny's Optimization
-window.
+<img width="100%" alt="image" src="/images/docs_v1/tunny-ui/menu-items.png">
 
-You'll learn how to run optimize, show result plot, and get result data into
-grasshopper.
+You can access various Tunny features through Grasshopper's menu.
+
+## Help
+
+Opens the Tunny documentation site.
+
+## Tutorial Files
+
+You can open tutorial files for Tunny. Selecting a filename will open the file
+directly in Grasshopper's canvas.
+
+These files are located in the Examples folder within the same directory as the
+GHA file.
+
+## Run Optuna Dashboard
+
+This menu item allows you to open Optuna Dashboard without opening Tunny UI.
+
+## Run TT DesignExplorer
+
+This menu item allows you to open TT DesignExplorer without opening Tunny UI.
+
+## About
+
+You can check information about Tunny's version, etc.
