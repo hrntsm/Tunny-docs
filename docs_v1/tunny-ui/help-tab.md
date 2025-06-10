@@ -4,27 +4,24 @@ description: |
   You'll learn how to run optimize, show result plot, and get result data into grasshopper.
 ---
 
-<img width="40%" alt="image" src="https://user-images.githubusercontent.com/23289252/208380955-2b2fd17d-46b8-4fb2-91de-0ff497dd5eb6.png">
+This section introduces each feature of the Help Tab.
 
-## Result
+<img width="100%" alt="image" src="/images/docs_v1/tunny-ui/help-tab.png">
 
-### Set file path **(new in v0.6)**
+## ① Subscription Group
 
-- The path to the file where the optimization results are saved can be set.
-- If you select an existing file, you will be asked if you want to replace it,
-  but past data will be retained.
+A page about Tunny's license subscriptions will open.
 
-### Open folder
+## ② Document Page Group
 
-- Open the folder where the file containing the optimization results is located.
-- Results are saved as "Tunny_Opt_Result.db" by default.
-  - Optimization results are stored in sqlite
-- This can be made to be anything you want by rewriting the Setting.json file.
+You can open the documentation pages for Tunny or Optuna. The Tunny
+documentation page displays this very website.
 
-### Clear file
+## ③ Software License Group
 
-- Deletes the optimization result file.
+You can check the licenses of the software used by Tunny and Tunny it self.
 
-## License
+## ④ Help page area
 
-- You can check license to push each button.
+Tunny's UI includes a built-in browser. As a result, the webpage resulting from
+pressing the button above will appear in this area.
