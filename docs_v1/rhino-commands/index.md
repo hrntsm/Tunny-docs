@@ -3,6 +3,10 @@ description: |
   This section describes Tunny's Rhino commands.
 ---
 
+You can also execute Tunny's functions from Rhino commands.
+
+<img width="30%" alt="image" src="/images/docs_v1/rhino-commands/commands.png">
+
 ## `TunnyRunDashboard` Command
 
 Sometimes you want to check Tunny's optimization results without opening
