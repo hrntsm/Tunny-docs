@@ -4,7 +4,7 @@ description: |
   You'll learn how to run optimize, show result plot, and get result data into grasshopper.
 ---
 
-This section introduces each feature of the UI.
+This section introduces each feature of the Optimize Tab.
 
 <img width="100%" alt="image" src="/images/docs_v1/tunny-ui/optimize-tab.png">
 
