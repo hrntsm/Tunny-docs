@@ -93,19 +93,21 @@ pressing `Draw`, you can create a chart of its contents.
 
 ## How to Select Trials in Optuna Dashboard
 
-While still experimental, you can now select which trials to output through the Optuna Dashboard.
-First, enable the experimental feature display as follows:
+While still experimental, you can now select which trials to output through the
+Optuna Dashboard. First, enable the experimental feature display as follows:
 
 <img width="60%" alt="image" src="/images/docs_v1/tunny-ui/enable-experimental.png">
 
-Use the Trials (Selection) interface that appears to make selections.
-On the Trials Selection page, you'll see a Parallel Coordinate plot.
-Selecting any part of this graph will dynamically update the Pareto front plot below.
-Trials marked with color are the selected ones.
+Use the Trials (Selection) interface that appears to make selections. On the
+Trials Selection page, you'll see a Parallel Coordinate plot. Selecting any part
+of this graph will dynamically update the Pareto front plot below. Trials marked
+with color are the selected ones.
 
-Below the plot, you'll find a table listing all selected trials.
-At the bottom of the table, you'll see a `Download CSV File` button - clicking this will export the selected trials.
+Below the plot, you'll find a table listing all selected trials. At the bottom
+of the table, you'll see a `Download CSV File` button - clicking this will
+export the selected trials.
 
-You can then load this generated CSV file into Tunny to import the selected trials into its user interface.
+You can then load this generated CSV file into Tunny to import the selected
+trials into its user interface.
 
 <img alt="image" src="/images/docs_v1/tunny-ui/output-csv.gif">
